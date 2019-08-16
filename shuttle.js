@@ -1,9 +1,9 @@
 function ststation() {
   var date = new Date();
   if (date.getDate == 0 || date.gatDate == 6) {
-    return '<span style="color:red;">미운행<span>';
+    return '<span style="color:red;">운행종료<span>';
   } else if (date.getHours() > 19 || date.getHours() < 8) {
-    return '<span style="color:red;">미운행<span>';
+    return '<span style="color:red;">운행종료<span>';
   } else {
     return '<span style="color:blue;font-weight:bold;">운행중<span>';
   }
@@ -12,9 +12,9 @@ function ststation() {
 function stdhd() {
   var date = new Date();
   if (date.getDate == 0 || date.gatDate == 6) {
-    return '<span style="color:red;">미운행<span>';
+    return '<span style="color:red;">운행종료<span>';
   } else if (date.getHours() > 8 || date.getHours() < 8) {
-    return '<span style="color:red;">미운행<span>';
+    return '<span style="color:red;">운행종료<span>';
   } else {
     return '<span style="color:blue;font-weight:bold;">운행중<span>';
   }
@@ -23,9 +23,9 @@ function stdhd() {
 function stsdstation() {
   var date = new Date();
   if (date.getDate == 0 || date.gatDate == 6) {
-    return '<span style="color:red;">미운행<span>';
+    return '<span style="color:red;">운행종료<span>';
   } else if (date.getHours() > 9 || date.getHours() < 8) {
-    return '<span style="color:red;">미운행<span>';
+    return '<span style="color:red;">운행종료<span>';
   } else {
     return '<span style="color:blue;font-weight:bold;">운행중<span>';
   }
@@ -34,9 +34,9 @@ function stsdstation() {
 function stinner() {
   var date = new Date();
   if (date.getDate == 0 || date.gatDate == 6) {
-    return '<span style="color:red;">미운행<span>';
+    return '<span style="color:red;">운행종료<span>';
   } else if (date.getHours() > 17 || date.getHours() < 8) {
-    return '<span style="color:red;">미운행<span>';
+    return '<span style="color:red;">운행종료<span>';
   } else {
     return '<span style="color:blue;font-weight:bold;">운행중<span>';
   }
@@ -45,9 +45,9 @@ function stinner() {
 function stnight() {
   var date = new Date();
   if (date.getDate == 0 || date.gatDate == 6) {
-    return '<span style="color:red;">미운행<span>';
+    return '<span style="color:red;">운행종료<span>';
   } else if (date.getHours() > 23 && date.getMinutes() > 10 || date.getHours() < 21) {
-    return '<span style="color:red;">미운행<span>';
+    return '<span style="color:red;">운행종료<span>';
   } else {
     return '<span style="color:blue;font-weight:bold;">운행중<span>';
   }
@@ -56,9 +56,9 @@ function stnight() {
 function ststationinterval() {
   var date = new Date();
   if (date.getDate == 0 || date.gatDate == 6) {
-    return '미운행';
+    return '운행종료';
   } else if (date.getHours() > 19 || date.getHours() < 8) {
-    return '미운행';
+    return '운행종료';
   } else if (date.getHours() == 8) {
     return '5~10분';
   } else if (date.getHours() == 9 || date.getHours() == 10) {
