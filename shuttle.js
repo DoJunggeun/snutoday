@@ -1,55 +1,55 @@
 function ststation() {
   var date = new Date();
   if (date.getDate == 0 || date.gatDate == 6) {
-    return '미운행';
+    return '<span style="color:red;">미운행<span>';
   } else if (date.getHours() > 19 || date.getHours() < 8) {
-    return '미운행';
+    return '<span style="color:red;">미운행<span>';
   } else {
-    return '운행중';
+    return '<span style="color:blue;font-weight:bold;">운행중<span>';
   }
 }
 
 function stdhd() {
   var date = new Date();
   if (date.getDate == 0 || date.gatDate == 6) {
-    return '미운행';
+    return '<span style="color:red;">미운행<span>';
   } else if (date.getHours() > 8 || date.getHours() < 8) {
-    return '미운행';
+    return '<span style="color:red;">미운행<span>';
   } else {
-    return '운행중';
+    return '<span style="color:blue;font-weight:bold;">운행중<span>';
   }
 }
 
 function stsdstation() {
   var date = new Date();
   if (date.getDate == 0 || date.gatDate == 6) {
-    return '미운행';
+    return '<span style="color:red;">미운행<span>';
   } else if (date.getHours() > 9 || date.getHours() < 8) {
-    return '미운행';
+    return '<span style="color:red;">미운행<span>';
   } else {
-    return '운행중';
+    return '<span style="color:blue;font-weight:bold;">운행중<span>';
   }
 }
 
 function stinner() {
   var date = new Date();
   if (date.getDate == 0 || date.gatDate == 6) {
-    return '미운행';
+    return '<span style="color:red;">미운행<span>';
   } else if (date.getHours() > 17 || date.getHours() < 8) {
-    return '미운행';
+    return '<span style="color:red;">미운행<span>';
   } else {
-    return '운행중';
+    return '<span style="color:blue;font-weight:bold;">운행중<span>';
   }
 }
 
 function stnight() {
   var date = new Date();
   if (date.getDate == 0 || date.gatDate == 6) {
-    return '미운행';
+    return '<span style="color:red;">미운행<span>';
   } else if (date.getHours() > 23 && date.getMinutes() > 10 || date.getHours() < 21) {
-    return '미운행';
+    return '<span style="color:red;">미운행<span>';
   } else {
-    return '운행중';
+    return '<span style="color:blue;font-weight:bold;">운행중<span>';
   }
 }
 

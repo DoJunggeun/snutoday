@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+<script type="text/javascript" src="conv.js"></script>
 <style>
   body,
   h1,
@@ -43,7 +44,7 @@
   ​
   <!-- Top menu on small screens -->
   <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
-    <span class="w3-left w3-padding" style="font-family: 'Noto Sans KR', sans-serif; font-weight:800;">서울대 지금 이거 하나요?</span>
+    <span class="w3-left w3-padding" style="font-family: 'Noto Sans KR', sans-serif; font-weight:800; font-size:24px;" onclick="location.href='main.html'">서울대 지금 이거 하나요?</span>
     <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
   </header>
   ​
@@ -78,28 +79,130 @@
     </div>
 
 
-    <!-- Contact section -->
-    <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
-      <div class="w3-content" style="max-width:600px">
-        <h4 class="w3-center"><b>제보하기</b></h4>
-        <p>본 페이지에 사실과 다른 정보가 있나요? 제보해주시면 확인 후 즉시 반영하겠습니다.</p>
-        <form>
-          <!--action="/action_page.php" target="_blank" method="post" -->
-          <div class="w3-section">
-            <label>이름</label>
-            <input class="w3-input w3-border" type="text" name="Name" required>
-          </div>
-          <div class="w3-section">
-            <label>이메일</label>
-            <input class="w3-input w3-border" type="text" name="Email" required>
-          </div>
-          <div class="w3-section">
-            <label>제보 내용</label>
-            <input class="w3-input w3-border" type="text" name="Message" required>
-          </div>
-          <button type="submit" class="w3-button w3-block w3-black w3-margin-bottom" onclick="alert('준비 중입니다.')">제보하기</button>
-        </form>
-      </div>
+    <center>
+      <span style="font-size:20px; font-weight:bold; text-decoration:underline; cursor:pointer;" onclick="window.open('http://snuco.snu.ac.kr/ko/node/19')">매점/편의점 정보 전체보기</span>
+    </center>
+
+    <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large">
+      <table class="w3-table-all w3-hoverable">
+        <thead>
+          <tr class="w3-light-grey">
+            <th>매장</th>
+            <th>위치</th>
+            <th>현재</th>
+          </tr>
+        </thead>
+        <tr>
+          <td>학생회관<br />편의점</td>
+          <td>학생회관<br />(63동 1층)</td>
+          <td>
+            <script>
+              document.write(hgconv());
+            </script>
+          </td>
+        </tr>
+        <tr>
+          <td>학생회관<br />문구점</td>
+          <td>학생회관<br />(63동 2층)</td>
+          <td>
+            <script>
+              document.write(hgmg());
+            </script>
+          </td>
+        </tr>
+        <tr>
+          <td>중도CU</td>
+          <td>중도<br />(62동 3층)</td>
+          <td>
+            <script>
+              document.write(jdCU());
+            </script>
+          </td>
+        </tr>
+        <tr>
+          <td>3식당(농식)<br />편의점</td>
+          <td>3식당<br />(75-1동 4층)</td>
+          <td>
+            <script>
+              document.write(nsconv());
+            </script>
+          </td>
+        </tr>
+        <tr>
+          <td>스누플렉스<br />(복합매장)</td>
+          <td>아시아연구소<br />(101동 1층)</td>
+          <td>
+            <script>
+              document.write(snuplex());
+            </script>
+          </td>
+        </tr>
+        <tr>
+          <td>동원관<br />편의점</td>
+          <td>동원생활관<br />(113동)</td>
+          <td>
+            <script>
+              document.write(dwgconv());
+            </script>
+          </td>
+        </tr>
+        <tr>
+          <td>220동<br />편의점</td>
+          <td>종합교육연구동<br />(220동 B1층)</td>
+          <td>
+            <script>
+              document.write(eeoconv());
+            </script>
+          </td>
+        </tr>
+        <tr>
+          <td>301동<br />CU</td>
+          <td>제1공학관<br />(301동 B1층)</td>
+          <td>
+            <script>
+              document.write(engCU());
+            </script>
+          </td>
+        </tr>
+        <tr>
+          <td>500동<br />편의점</td>
+          <td>500동 1층</td>
+          <td>
+            <script>
+              document.write(cnsconv());
+            </script>
+          </td>
+        </tr>
+        <tr>
+          <td>기숙사<br />편의점</td>
+          <td>관악사<br />(919동 1층)</td>
+          <td>
+            <script>
+              document.write(dormconv());
+            </script>
+          </td>
+        </tr>
+        <tr>
+          <td>수의대<br />휴게매점</td>
+          <td>수의과대학<br />(85동 3층)</td>
+          <td>
+            <script>
+              document.write(vetconv());
+            </script>
+          </td>
+        </tr>
+        <tr>
+          <td>의대<br />CU</td>
+          <td>융합관<br />(8동 2층)</td>
+          <td>
+            <script>
+              document.write(medconv());
+            </script>
+          </td>
+        </tr>
+      </table>
+
+
     </div>
 
     <div class="w3-black w3-center w3-padding-24">제작자 : 물리천문 15 도정근</div>
