@@ -34,7 +34,7 @@ function hgmeal() {
       return '<span style="color:red;">운영종료</span><br /><span style="color:green;font-weight:bold;">' + gett(11, 30) + '분남음</span>';
     } else if (date.getHours() >= 14 && date.getHours() < 17) {
       return '<span style="color:red;">운영종료</span><br /><span style="color:green;font-weight:bold;">' + gett(17, 0) + '분남음</span>';
-    } else{
+    } else {
       return '<span style="color:red;">운영종료<br />오늘은끝</span>';
 
     }

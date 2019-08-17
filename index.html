@@ -70,6 +70,9 @@
       height: 150px;
       background-position: center center;
     }
+    .w3-display-middle.w3-xlarge{
+      font-size:18px;
+    }
   }
 </style>
 </head>
@@ -91,7 +94,7 @@
   <!-- Top menu on small screens -->
   <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
     <span class="w3-left w3-padding" style="font-family: 'Noto Sans KR', sans-serif; font-weight:800; font-size:22px;" onclick="location.href='index.html'">서울대 지금 이거 하나요?</span>
-    <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+    <a href="javascript:void(0)" class="w3-right w3-button w3-white"  onclick="w3_open()">☰</a>
   </header>
   ​
   <!-- Overlay effect when opening sidebar on small <scr></scr>eens -->
@@ -165,6 +168,7 @@
     // Script to open and close sidebar
     function w3_open() {
       document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("mySidebar").style.width = "100%";
       document.getElementById("myOverlay").style.display = "block";
     }
 
@@ -184,5 +188,4 @@
 
 
 </body>
-
 </html>
