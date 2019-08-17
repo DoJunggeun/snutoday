@@ -105,29 +105,28 @@
         <script type='text/javascript'>
           //<![CDATA[
           // // 사용할 앱의 JavaScript 키를 설정해 주세요.
-          Kakao.init('a67a5702a7f8fb47017cacf25eb345cc');
+          Kakao.init('5bf552be44dafb22aea574dc74a4f4e9');
           // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
-          function sendLink() {
-            Kakao.Link.sendDefault({
-              objectType: 'text',
-              content: {
-                title: '서울대 지금 이거 하나요?',
-                imageUrl: 'https://dojunggeun.github.io/snutoday/img/snumain.jpg',
-                link: {
-                  mobileWebUrl: 'https://dojunggeun.github.io/snutoday/index.html',
-                  webUrl: 'https://dojunggeun.github.io/snutoday/index.html'
-                }
-              },
-              buttons: [{
-                  title: '보러가기',
-                  link: {
-                    mobileWebUrl: 'https://dojunggeun.github.io/snutoday/index.html',
-                    webUrl: 'https://dojunggeun.github.io/snutoday/index.html'
-                  }
-                }
-              ]
-            });
-          }
+          Kakao.Link.createDefaultButton({
+            container: '#kakao-link-btn',
+            objectType: 'feed',
+            content: {
+              title: '서울대 지금 이거 하나요?',
+              description: '#셔틀 #식당 #매점 #카페',
+              imageUrl: 'https://dojunggeun.github.io/snutoday/img/snumain.jpg',
+              link: {
+                mobileWebUrl: 'https://dojunggeun.github.io/snutoday',
+                webUrl: 'https://dojunggeun.github.io/snutoday'
+              }
+            },
+            buttons: [{
+              title: '보러가기',
+              link: {
+                mobileWebUrl: 'https://dojunggeun.github.io/snutoday',
+                webUrl: 'https://dojunggeun.github.io/snutoday'
+              }
+            }]
+          });
           //]]>
         </script>
       </center>
