@@ -1,7 +1,7 @@
 function ststation() {
   var date = new Date();
   if (date.getDay() == 0 || date.getDay() == 6) {
-    return '<span style="color:red;">평일에만합니다<span>';
+    return '<span style="color:red;">평일에만<br />운행<span>';
   } else if (date.getHours() > 19 || date.getHours() < 8) {
     return '<span style="color:red;">운행종료<span>';
   } else {
@@ -12,7 +12,7 @@ function ststation() {
 function stdhd() {
   var date = new Date();
   if (date.getDay() == 0 || date.getDay() == 6) {
-    return '<span style="color:red;">평일에만합니다<span>';
+    return '<span style="color:red;">평일에만<br />운행<span>';
   } else if (date.getHours() > 8 || date.getHours() < 8) {
     return '<span style="color:red;">운행종료<span>';
   } else {
@@ -23,7 +23,7 @@ function stdhd() {
 function stsdstation() {
   var date = new Date();
   if (date.getDay() == 0 || date.getDay() == 6) {
-    return '<span style="color:red;">평일에만합니다<span>';
+    return '<span style="color:red;">평일에만<br />운행<span>';
   } else if (date.getHours() > 9 || date.getHours() < 8) {
     return '<span style="color:red;">운행종료<span>';
   } else {
@@ -34,7 +34,7 @@ function stsdstation() {
 function stinner() {
   var date = new Date();
   if (date.getDay() == 0 || date.getDay() == 6) {
-    return '<span style="color:red;">평일에만합니다<span>';
+    return '<span style="color:red;">평일에만<br />운행<span>';
   } else if (date.getHours() > 17 || date.getHours() < 8) {
     return '<span style="color:red;">운행종료<span>';
   } else {
@@ -45,7 +45,7 @@ function stinner() {
 function stnight() {
   var date = new Date();
   if (date.getDay() == 0 || date.getDay() == 6) {
-    return '<span style="color:red;">평일에만합니다<span>';
+    return '<span style="color:red;">평일에만<br />운행<span>';
   } else if (date.getHours() > 23 && date.getMinutes() > 10 || date.getHours() < 21) {
     return '<span style="color:red;">운행종료<span>';
   } else {
