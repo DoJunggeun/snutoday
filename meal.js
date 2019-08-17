@@ -19,17 +19,17 @@ function hgmeal() {
     return '<span style="color:blue;font-weight:bold;">운영중<span>';
   } else if (date.getDay() > 0 && date.getDay() < 6) {
     if (date.getHours() < 8) {
-      return '<span style="color:red;">운영종료<br />'+gett(8,0)+'분남음<span>';
+      return '<span style="color:red;">운영종료</span><br /><span style="color:green;font-weight:bold;">'+gett(8,0)+'분남음</span>';
     } else if (date.getHours() >= 10 && date.getHours() < 11) {
-      return '<span style="color:red;">운영종료<br />'+gett(11,0)+'분남음<span>';
+      return '<span style="color:red;">운영종료</span><br /><span style="color:green;font-weight:bold;">'+gett(11,0)+'분남음</span>';
     } else if (date.getHours() >= 16 && date.getHours() < 17) {
-      return '<span style="color:red;">운영종료<br />'+gett(17,0)+'분남음<span>';
+      return '<span style="color:red;">운영종료</span><br /><span style="color:green;font-weight:bold;">'+gett(17,0)+'분남음</span>';
     }
   } else if (date.getDay() == 0 || date.getDay() == 6) {
     if (date.getHours() <= 11) {
-      return '<span style="color:red;">운영종료<br />'+gett(11,30)+'분남음<span>';
+      return '<span style="color:red;">운영종료</span><br /><span style="color:green;font-weight:bold;">'+gett(11,30)+'분남음</span>';
     } else if (date.getHours() >= 14 && date.getHours() < 17) {
-      return '<span style="color:red;">운영종료<br />'+gett(17,0)+'분남음<span>';
+      return '<span style="color:red;">운영종료</span><br /><span style="color:green;font-weight:bold;">'+gett(17,0)+'분남음</span>';
     }
   }
 }
