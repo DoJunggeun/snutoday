@@ -121,7 +121,7 @@ function cnsconv() {
     return '<span style="color:red;">일요일은<br />운영안함</span>';
   } else if ((date.getDay() == 6) && (date.getHours() >= 10 && date.getHours() < 17)) {
     return '<span style="color:blue;font-weight:bold;">운영중<br />' + gett(17, 0) + '분후종료</span>';
-  } else if ((date.getDay() > 0 && date.getDay() < 6) && ((date.getHours() >= 9 && date.getHours() < 20) || (date.getHours() == 8 && date.getMinutes() > 30))) {
+  } else if ((date.getDay() > 0 && date.getDay() < 6) && ((date.getHours() >= 9 && date.getHours() < 20) || (date.getHours() == 8 && date.getMinutes() >= 30))) {
     return '<span style="color:blue;font-weight:bold;">운영중<br />' + gett(20, 0) + '분후종료</span>';
   } else if (date.getDay() == 6 && date.getHours() < 10) {
     return '<span style="color:red;">미운영</span><br /><span style="color:green;font-weight:bold;">' + gett(10, 0) + '분후시작</span>';

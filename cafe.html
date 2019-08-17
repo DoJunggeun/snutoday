@@ -1,53 +1,65 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145841262-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145841262-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-145841262-1');
-</script>
-<title>지금 카페 하나요?</title>
-<meta charset="UTF-8">
-<meta property="og:type" content="website">
-<meta property="og:title" content="서울대 지금 카페 하나요?">
-<meta property="og:url" content="https://dojunggeun.github.io/snutoday/conv.html">
-<meta property="og:description" content="셔틀/매점/식당 운영시간 제공">
-<meta property="og:image" content="./img/nn.jpg">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
-<script type="text/javascript" src="cafe.js"></script>
-<script type="text/javascript" src="functions.js"></script>
-<script type="text/javascript" src="design.js"></script>
-<style>
-  body,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    font-family: 'Noto Sans KR', 'Raleway', sans-serif;
-  }
-  th {
-    vertical-align:middle;
-    text-align:center;
-  }
-  .w3-third img {
-    margin-bottom: -6px;
-    opacity: 0.8;
-    cursor: pointer
-  }
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
 
-  .w3-third img:hover {
-    opacity: 1
-  }
-</style>
+    gtag('config', 'UA-145841262-1');
+  </script>
+  <title>지금 카페 하나요?</title>
+  <meta charset="UTF-8">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="서울대 지금 카페 하나요?">
+  <meta property="og:url" content="https://dojunggeun.github.io/snutoday/conv.html">
+  <meta property="og:description" content="셔틀/매점/식당 운영시간 제공">
+  <meta property="og:image" content="./img/nn.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="cafe.js"></script>
+  <script type="text/javascript" src="functions.js"></script>
+  <script type="text/javascript" src="design.js"></script>
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: 'Noto Sans KR', 'Raleway', sans-serif;
+    }
+
+    th {
+      vertical-align: middle;
+      text-align: center;
+    }
+
+    .w3-third img {
+      margin-bottom: -6px;
+      opacity: 0.8;
+      cursor: pointer
+    }
+
+    .w3-third img:hover {
+      opacity: 1
+    }
+    @media(max-width:500px) {
+      table {
+        font-size: 13px;
+      }
+    }
+  </style>
 </head>
+
 <body class="w3-light-grey w3-content" style="max-width:1600px">
   ​
   <!-- Sidebar/menu -->
@@ -59,6 +71,7 @@
     <a href="shuttle.html" onclick="w3_close()" class="w3-bar-item w3-button" style="font-family: 'Noto Sans KR', sans-serif;">지금 셔틀 하나요?</a>
     <a href="meal.html" onclick="w3_close()" class="w3-bar-item w3-button" style="font-family: 'Noto Sans KR', sans-serif;">지금 식당 하나요?</a>
     <a href="conv.html" onclick="w3_close()" class="w3-bar-item w3-button" style="font-family: 'Noto Sans KR', sans-serif;">지금 매점 하나요?</a>
+    <a href="cafe.html" onclick="w3_close()" class="w3-bar-item w3-button" style="font-family: 'Noto Sans KR', sans-serif;">지금 카페 하나요?</a>
     <a href="hongbo.html" onclick="w3_close()" class="w3-bar-item w3-button" style="font-family: 'Noto Sans KR', sans-serif;">공유하기</a>
     <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button" style="font-family: 'Noto Sans KR', sans-serif;">제보하기</a>
   </nav>
@@ -105,124 +118,185 @@
     </center>
 
     <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large">
+      <center>
+        <h3>좌석이 있는 카페</h3>
+      </center>
       <table class="w3-table-all w3-hoverable">
         <thead>
           <tr class="w3-light-grey">
-            <th>매장</th>
+            <th>카페</th>
             <th>위치</th>
             <th>현재</th>
           </tr>
         </thead>
         <tr>
-          <td>학생회관<br />편의점</td>
+          <td>중도<br />느티나무</td>
+          <td>중앙도서관<br />(62동)</td>
+          <td>
+            <script>
+              document.write(libnn());
+            </script>
+          </td>
+        </tr>
+        <tr>
+          <td>언교원<br />느티나무</td>
+          <td>언어교육원<br />(137-1동)</td>
+          <td>
+            <script>
+              document.write(lannn());
+            </script>
+          </td>
+        </tr>
+        <tr>
+          <td>음대<br />느티나무</td>
+          <td>음대<br />(54동)</td>
+          <td>
+            <script>
+              document.write(musicnn());
+            </script>
+          </td>
+        </tr>
+        <tr>
+          <td>Fluid카페</td>
           <td>학생회관<br />(63동 1층)</td>
           <td>
             <script>
-              document.write(hgconv());
+              document.write(fluid());
             </script>
           </td>
         </tr>
         <tr>
-          <td>학생회관<br />문구점</td>
-          <td>학생회관<br />(63동 2층)</td>
-          <td>
-            <script>
-              document.write(hgmg());
-            </script>
-          </td>
-        </tr>
-        <tr>
-          <td>중도CU</td>
-          <td>중도<br />(62동 3층)</td>
-          <td>
-            <script>
-              document.write(jdCU());
-            </script>
-          </td>
-        </tr>
-        <tr>
-          <td>3식당(농식)<br />편의점</td>
-          <td>3식당<br />(75-1동 4층)</td>
-          <td>
-            <script>
-              document.write(nsconv());
-            </script>
-          </td>
-        </tr>
-        <tr>
-          <td>스누플렉스<br />(복합매장)</td>
-          <td>아시아연구소<br />(101동 1층)</td>
-          <td>
-            <script>
-              document.write(snuplex());
-            </script>
-          </td>
-        </tr>
-        <tr>
-          <td>동원관<br />편의점</td>
-          <td>동원생활관<br />(113동)</td>
-          <td>
-            <script>
-              document.write(dwgconv());
-            </script>
-          </td>
-        </tr>
-        <tr>
-          <td>220동<br />편의점</td>
-          <td>종합교육연구동<br />(220동 B1층)</td>
-          <td>
-            <script>
-              document.write(eeoconv());
-            </script>
-          </td>
-        </tr>
-        <tr>
-          <td>301동<br />CU</td>
-          <td>제1공학관<br />(301동 B1층)</td>
-          <td>
-            <script>
-              document.write(engCU());
-            </script>
-          </td>
-        </tr>
-        <tr>
-          <td>500동<br />편의점</td>
+          <td>투썸플레이스</td>
           <td>500동 1층</td>
           <td>
             <script>
-              document.write(cnsconv());
+              document.write(twosome());
             </script>
           </td>
         </tr>
         <tr>
-          <td>기숙사<br />편의점</td>
-          <td>관악사<br />(919동 1층)</td>
+          <td>할리스커피</td>
+          <td>(74동 2층)</td>
           <td>
             <script>
-              document.write(dormconv());
+              document.write(hollys());
             </script>
           </td>
         </tr>
         <tr>
-          <td>수의대<br />휴게매점</td>
-          <td>수의과대학<br />(85동 3층)</td>
+          <td>파스쿠찌</td>
+          <td>사범대<br />(111동)</td>
           <td>
             <script>
-              document.write(vetconv());
+              document.write(pascucci());
             </script>
           </td>
         </tr>
         <tr>
-          <td>의대<br />CU</td>
-          <td>융합관<br />(8동 2층)</td>
+          <td>다향만당</td>
+          <td>두레문예관<br />(67동 2층)</td>
           <td>
             <script>
-              document.write(medconv());
+              document.write(tea());
+            </script>
+          </td>
+        </tr>
+        <tr>
+          <td>퀴즈노스</td>
+          <td>신공학관<br />(301동)</td>
+          <td>
+            <script>
+              document.write(quiz());
+            </script>
+          </td>
+        </tr>
+        <tr>
+          <td>BeLepi</td>
+          <td>농생대<br />(200동)</td>
+          <td>
+            <script>
+              document.write(belepi());
+            </script>
+          </td>
+        </tr>
+        <tr>
+          <td>카페이야기</td>
+          <td>법학도서관<br />(72동)</td>
+          <td>
+            <script>
+              document.write(eyagi());
+            </script>
+          </td>
+        </tr>
+        <tr>
+          <td>수의대스낵</td>
+          <td>수의대<br />(85동)</td>
+          <td>
+            <script>
+              document.write(vetsnack());
+            </script>
+          </td>
+        </tr>
+        <tr>
+          <td>카페104</td>
+          <td>반도체연구소<br />(104-1동)</td>
+          <td>
+            <script>
+              document.write(cafe104());
             </script>
           </td>
         </tr>
       </table>
 
+      <center>
+        <h3>좌석이 없는 take-out 카페</h3>
+      </center>
+
+      <table class="w3-table-all w3-hoverable">
+        <thead>
+          <tr class="w3-light-grey">
+            <th>카페</th>
+            <th>위치</th>
+            <th>현재</th>
+          </tr>
+        </thead>
+        <tr>
+          <td>라운지스낵</td>
+          <td>학생회관<br />(63동 2층)</td>
+          <td>
+            <script>
+              document.write(snack());
+            </script>
+          </td>
+        </tr>
+        <tr>
+          <td>자하연<br />느티나무</td>
+          <td>자하연<br />(109동	)</td>
+          <td>
+            <script>
+              document.write(jhynn());
+            </script>
+          </td>
+        </tr>
+        <tr>
+          <td>동원관<br />느티나무</td>
+          <td>동원생활관<br />(113동)</td>
+          <td>
+            <script>
+              document.write(dwgnn());
+            </script>
+          </td>
+        </tr>
+        <tr>
+          <td>모아아트</td>
+          <td>미술관<br />(151동)</td>
+          <td>
+            <script>
+              document.write(moaart());
+            </script>
+          </td>
+        </tr>
+      </table>
 
     </div>
 
