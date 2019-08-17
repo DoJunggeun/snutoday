@@ -68,7 +68,7 @@ function dormmeal() {
   } else if (date.getMinutes() >= 30 && ((date.getHours() == 11) || (date.getHours() == 17) || (date.getDay() > 0 && date.getDay() < 6 && date.getHours() == 7))) {
     return '<span style="color:blue;font-weight:bold;">운영중<span>';
   } else {
-    return '<span style="color:red;">운영종료<br />오늘은끝<span>';
+    return '<span style="color:red;">미운영<span>';
   }
 }
 
@@ -79,7 +79,7 @@ function eng302meal() {
   } else if ((date.getHours() > 11 && date.getHours() < 14) || (date.getHours() == 11 && date.getMinutes() >= 15) || (date.getHours() >= 17 && date.getHours() < 19)) {
     return '<span style="color:blue;font-weight:bold;">운영중<span>';
   } else {
-    return '<span style="color:red;">운영종료<span>';
+    return '<span style="color:red;">미운영<span>';
   }
 }
 
@@ -90,7 +90,7 @@ function eng301meal() {
   } else if ((date.getHours() >= 11 && date.getHours() < 14) || (date.getHours() >= 17 && date.getHours() < 19)) {
     return '<span style="color:blue;font-weight:bold;">운영중<span>';
   } else {
-    return '<span style="color:red;">운영종료<span>';
+    return '<span style="color:red;">미운영<span>';
   }
 }
 
@@ -102,7 +102,7 @@ function artmeal() {
   } else if ((date.getHours() > 11 && date.getHours() < 14) || (date.getHours() == 11 && date.getMinutes() >= 30) || (date.getHours() >= 17 && date.getHours() < 19)) {
     return '<span style="color:blue;font-weight:bold;">운영중<span>';
   } else {
-    return '<span style="color:red;">운영종료<span>';
+    return '<span style="color:red;">미운영<span>';
   }
 }
 
@@ -114,7 +114,7 @@ function ggmeal() {
   } else if ((date.getHours() >= 11 && date.getHours() < 14) || (date.getHours() >= 17 && date.getHours() < 18) || (date.getHours() == 18 && date.getMinutes() < 30)) {
     return '<span style="color:blue;font-weight:bold;">운영중<span>';
   } else {
-    return '<span style="color:red;">운영종료<span>';
+    return '<span style="color:red;">미운영<span>';
   }
 }
 
