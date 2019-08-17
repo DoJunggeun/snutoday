@@ -99,45 +99,40 @@
       <center>
         <h2>카카오톡으로 공유하기</h2>
         <p>널리 알려주세요ㅎ</p>
+        <a id="kakao-link-btn" href="javascript:sendLink()">
+          <img src="//developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png" />
+        </a>
         <script type='text/javascript'>
           //<![CDATA[
-            // // 사용할 앱의 JavaScript 키를 설정해 주세요.
-            Kakao.init('a67a5702a7f8fb47017cacf25eb345cc');
-            // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
-            Kakao.Link.createDefaultButton({
-              container: '#kakao-link-btn',
-              objectType: 'feed',
+          // // 사용할 앱의 JavaScript 키를 설정해 주세요.
+          Kakao.init('a67a5702a7f8fb47017cacf25eb345cc');
+          // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
+          function sendLink() {
+            Kakao.Link.sendDefault({
+              objectType: 'commerce',
               content: {
-                title: '딸기 치즈 케익',
-                description: '#케익 #딸기 #삼평동 #카페 #분위기 #소개팅',
-                imageUrl: 'http://mud-kage.kakao.co.kr/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
+                title: '도정근과의 식사권',
+                imageUrl: 'https://dojunggeun.github.io/snutoday/img/snumain.jpg',
                 link: {
-                  mobileWebUrl: 'https://developers.kakao.com',
-                  webUrl: 'https://developers.kakao.com'
+                  mobileWebUrl: 'https://dojunggeun.github.io/snutoday/index.html',
+                  webUrl: 'https://dojunggeun.github.io/snutoday/index.html'
                 }
               },
-              social: {
-                likeCount: 286,
-                commentCount: 45,
-                sharedCount: 845
+              commerce: {
+                regularPrice: 50000,
+                discountPrice: 1000,
+                discountRate: 98
               },
-              buttons: [
-                {
-                  title: '웹으로 보기',
+              buttons: [{
+                  title: '보러가기',
                   link: {
-                    mobileWebUrl: 'https://developers.kakao.com',
-                    webUrl: 'https://developers.kakao.com'
-                  }
-                },
-                {
-                  title: '앱으로 보기',
-                  link: {
-                    mobileWebUrl: 'https://developers.kakao.com',
-                    webUrl: 'https://developers.kakao.com'
+                    mobileWebUrl: 'https://dojunggeun.github.io/snutoday/index.html',
+                    webUrl: 'https://dojunggeun.github.io/snutoday/index.html'
                   }
                 }
               ]
             });
+          }
           //]]>
         </script>
       </center>
