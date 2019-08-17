@@ -132,13 +132,11 @@ function cnsconv() {
   }
 }
 
-/*여기 아래 마저 해야됨*/
-
 function dormconv() {
   var date = new Date();
   if (date.getHours() >= 8 && date.getHours() < 24) {
     return '<span style="color:blue;font-weight:bold;">운영중<br />' + gett(25, 30) + '분후종료</span>';
-  } else if (date.getHours() == 0 || date.getHours() == 1 || (date.getHours() == 1 && date.getMinutes() < 30)) {
+  } else if (date.getHours() == 0 || (date.getHours() == 1 && date.getMinutes() < 30)) {
     return '<span style="color:blue;font-weight:bold;">운영중<br />' + gett(1, 30) + '분후종료</span>';
   } else if (date.getHours() < 8) {
     return '<span style="color:blue;font-weight:bold;">미운영</span><br /><span style="color:green;font-weight:bold;">' + gett(8, 0) + '분후시작</span>';
