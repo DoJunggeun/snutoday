@@ -1,47 +1,53 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145841262-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145841262-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-145841262-1');
-</script>
-<title>지금 식당 하나요?</title>
-<meta charset="UTF-8">
-<meta property="og:type" content="website">
-<meta property="og:title" content="서울대 지금 식당 하나요?">
-<meta property="og:url" content="https://dojunggeun.github.io/snutoday/meal.html">
-<meta property="og:description" content="셔틀/매점/식당 운영시간 제공">
-<meta property="og:image" content="./img/sd2.jpg">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
-<style>
-  body,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    font-family: 'Noto Sans KR', 'Raleway', sans-serif;
-  }
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
 
-  .w3-third img {
-    margin-bottom: -6px;
-    opacity: 0.8;
-    cursor: pointer
-  }
+    gtag('config', 'UA-145841262-1');
+  </script>
+  <title>지금 식당 하나요?</title>
+  <meta charset="UTF-8">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="서울대 지금 식당 하나요?">
+  <meta property="og:url" content="https://dojunggeun.github.io/snutoday/meal.html">
+  <meta property="og:description" content="셔틀/매점/식당 운영시간 제공">
+  <meta property="og:image" content="./img/sd2.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="meal.js"></script>
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: 'Noto Sans KR', 'Raleway', sans-serif;
+    }
 
-  .w3-third img:hover {
-    opacity: 1
-  }
-</style>
+    .w3-third img {
+      margin-bottom: -6px;
+      opacity: 0.8;
+      cursor: pointer
+    }
+
+    .w3-third img:hover {
+      opacity: 1
+    }
+  </style>
 </head>
+
 <body class="w3-light-grey w3-content" style="max-width:1600px">
   ​
   <!-- Sidebar/menu -->
@@ -92,12 +98,146 @@
       </div>
     </div>
 
-    <center style="margin-top:300px;margin-bottom:300px;">
-      <h1>준비중입니다</h1>
-      <center>
-        <span style="font-size:20px; font-weight:bold; text-decoration:underline; cursor:pointer;" onclick="window.open('http://snuco.snu.ac.kr/ko/node/20')">식당 운영시간 전체보기</span>
-      </center>
+    <center>
+      <span style="font-size:20px; font-weight:bold; text-decoration:underline; cursor:pointer;" onclick="window.open('http://snuco.snu.ac.kr/ko/node/20')">식당 운영시간 전체보기</span>
     </center>
+
+    <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large">
+      <table class="w3-table-all w3-hoverable">
+        <thead>
+          <tr class="w3-light-grey">
+            <th>식당</th>
+            <th>위치</th>
+            <th>현재</th>
+          </tr>
+        </thead>
+        <tr>
+          <td>학생회관<br />식당</td>
+          <td>학생회관<br />(63동 1층)</td>
+          <td>
+            <script>
+              document.write(hgmeal());
+            </script>
+          </td>
+        </tr>
+        <tr>
+          <td>학생회관<br />9출</td>
+          <td>학생회관<br />(63동 B1층)</td>
+          <td>
+            <script>
+              document.write(hgmeal2());
+            </script>
+          </td>
+        </tr>
+        <tr>
+          <td>자하연식당</td>
+          <td>농협<br />(109동 2층)</td>
+          <td>
+            <script>
+              document.write(nhmeal());
+            </script>
+          </td>
+        </tr>
+        <tr>
+          <td>예술계식당</td>
+          <td>(74동 1층)</td>
+          <td>
+            <script>
+              document.write(artmeal());
+            </script>
+          </td>
+        </tr>
+        <tr>
+          <td>모두의공간(공깡)</td>
+          <td>(30-2동 1층)</td>
+          <td>
+            <script>
+              document.write(gongmeal());
+            </script>
+          </td>
+        </tr>
+        <tr>
+          <td>3식당(농식)</td>
+          <td>(75-1동 4층)</td>
+          <td>
+            <script>
+              document.write(nsmeal());
+            </script>
+          </td>
+        </tr>
+        <tr>
+          <td>301동식당</td>
+          <td>(301동 B1층)</td>
+          <td>
+            <script>
+              document.write(eng301meal());
+            </script>
+          </td>
+        </tr>
+        <tr>
+          <td>302동식당</td>
+          <td>(302동 1층)</td>
+          <td>
+            <script>
+              document.write(eng302meal());
+            </script>
+          </td>
+        </tr>
+        <tr>
+          <td>동원관식당</td>
+          <td>동원생활관<br />(113동 2층)</td>
+          <td>
+            <script>
+              document.write(dwgmeal());
+            </script>
+          </td>
+        </tr>
+        <tr>
+          <td>감골식당</td>
+          <td>아시아연구소<br />(101동 1층)</td>
+          <td>
+            <script>
+              document.write(ggmeal());
+            </script>
+          </td>
+        </tr>
+        <tr>
+          <td>4식당(사식)<br /></td>
+          <td>(76동 1층)</td>
+          <td>
+            <script>
+              document.write(edumeal());
+            </script>
+          </td>
+        </tr>
+        <tr>
+          <td>220동식당</td>
+          <td>(220동 B1층)</td>
+          <td>
+            <script>
+              document.write(meal220());
+            </script>
+          </td>
+        </tr>
+        <tr>
+          <td>기숙사식당</td>
+          <td>(919동 1층)</td>
+          <td>
+            <script>
+              document.write(dormmeal());
+            </script>
+          </td>
+        </tr>
+
+      </table>
+
+      <center>
+        <p>
+          라운지오, 소담마루, 샤반 등은 추후 추가될 예정입니다.
+        </p>
+      </center>
+
+    </div>
 
     <div class="w3-black w3-center w3-padding-24">제작자 : 물리천문 15 도정근</div>
 
