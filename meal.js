@@ -57,7 +57,7 @@ function gongmeal() {
   }
 }
 
-/*   이 아래로 ?분남음 처리 안함. 기숙사 302 301 예술계  감골*/
+/*   이 아래로 ?분후시작 처리 안함. 기숙사 302 301 예술계  감골 + ?분후 종료는 다 안함ㅋ*/
 
 function dormmeal() {
   var date = new Date();
@@ -153,13 +153,3 @@ function m11141719() {
     return '<span style="color:red;">운영종료<br />오늘은끝</span>';
   }
 }
-
-function gett(hour, minute) {
-  var h = hour;
-  var m = minute;
-  var date = new Date();
-  var geth = hour - date.getHours();
-  var getm = minute - date.getMinutes();
-    getm = getm + geth * 60;
-    return getm;
-  }
