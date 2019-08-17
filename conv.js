@@ -1,4 +1,3 @@
-red;font-weight:bold;">미운function hgconv() {
   var date = new Date();
   if ((date.getDay() == 0 || date.getDay() == 6) && (date.getHours() >= 8 && date.getHours() < 19)) {
     return '<span style="color:blue;font-weight:bold;">운영중<br/>' + gett(19, 0) + '분후종료</span>';
