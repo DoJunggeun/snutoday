@@ -24,37 +24,7 @@
 <script type="text/javascript" src="shuttle.js"></script>
 <script type="text/javascript" src="functions.js"></script>
 <script type="text/javascript" src="design.js"></script>
-<style>
-  body,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    font-family: 'Noto Sans KR', 'Raleway', sans-serif;
-  }
-
-  .w3-third img {
-    margin-bottom: -6px;
-    opacity: 0.8;
-    cursor: pointer
-  }
-
-  .w3-third img:hover {
-    opacity: 1
-  }
-
-  th {
-    vertical-align:middle;
-    text-align:center;
-  }
-
-  @media(max-width:500px) {
-    table {
-      font-size: 13px;
-    }
-  }
-</style>
+<link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body class="w3-light-grey w3-content" style="max-width:1600px">
   ​
@@ -113,11 +83,11 @@
     <center>
       <span style="font-size:20px; font-weight:bold; text-decoration:underline; cursor:pointer;" onclick="window.open('./img/sttt.jpg')">셔틀버스 시간표 전체보기</span>
     </center>
-    <center>
-      <p>셔틀버스는 평일(토요일, 일요일, 공휴일 제외)에만<br />운영합니다.</p>
-    </center>
 
     <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large">
+      <center>
+        <p>셔틀버스는 평일(토요일, 일요일, 공휴일 제외)에만<br />운영합니다.</p>
+      </center>
       <table class="w3-table-all w3-hoverable">
         <thead>
           <tr class="w3-light-grey">
