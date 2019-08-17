@@ -96,39 +96,41 @@
 
     <!-- Contact section -->
     <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large">
-      <p>카카오톡으로 공유하기</p>
-      <p>널리 알려주세요ㅎ</p>
-      <script type='text/javascript'>
-        //<![CDATA[
-        // // 사용할 앱의 JavaScript 키를 설정해 주세요.
-        Kakao.init('5bf552be44dafb22aea574dc74a4f4e9');
-        // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
-        var url = 'https://dojunggeun.github.io/snutoday/index.html'
-        Kakao.Link.createDefaultButton({
-          container: '#kakao-link-btn',
-          objectType: 'text',
-          text: '서울대 지금 이거 하나요?',
-          link: {
-            mobileWebUrl: url,
-            webUrl: url
-          },
-          content: {
-            title: '서울대 지금 이거 하나요?',
-            imageUrl: 'https://dojunggeun.github.io/snutoday/index.jpg',
-            link: {
-              mobileWebUrl: 'https://dojunggeun.github.io/snutoday/index.html',
-              webUrl: 'https://dojunggeun.github.io/snutoday/index.html'
-            }
-          },
-          buttons: [{
-            title: '바로가기',
+      <center>
+        <h2>카카오톡으로 공유하기</h2>
+        <p>널리 알려주세요ㅎ</p>
+        <script type='text/javascript'>
+          //<![CDATA[
+          // // 사용할 앱의 JavaScript 키를 설정해 주세요.
+          Kakao.init('5bf552be44dafb22aea574dc74a4f4e9');
+          // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
+          var url = 'https://dojunggeun.github.io/snutoday/index.html'
+          Kakao.Link.createDefaultButton({
+            container: '#kakao-link-btn',
+            objectType: 'text',
+            text: '서울대 지금 이거 하나요?',
             link: {
               mobileWebUrl: url,
               webUrl: url
-            }
-          }]
-        });
-      </script>
+            },
+/*            content: {
+              title: '서울대 지금 이거 하나요?',
+              imageUrl: 'https://dojunggeun.github.io/snutoday/index.jpg',
+              link: {
+                mobileWebUrl: 'https://dojunggeun.github.io/snutoday/index.html',
+                webUrl: 'https://dojunggeun.github.io/snutoday/index.html'
+              }
+            },  */
+            buttons: [{
+              title: '바로가기',
+              link: {
+                mobileWebUrl: url,
+                webUrl: url
+              }
+            }]
+          });
+        </script>
+      </center>
 
 
     </div>
