@@ -1,8 +1,8 @@
 function hgconv() {
   var date = new Date();
-  if ((date.getDate() == 0 || date.getDate() == 6) && (date.getHours() >= 8 && date.getHours()) < 19) {
+  if ((date.getDay() == 0 || date.getDay() == 6) && (date.getHours() >= 8 && date.getHours()) < 19) {
     return '<span style="color:blue;font-weight:bold;">운영중<span>';
-  } else if ((date.getDate() > 0 || date.getDate() < 6) && (date.getHours() >= 8 && date.getHours() < 20)) {
+  } else if ((date.getDay() > 0 || date.getDay() < 6) && (date.getHours() >= 8 && date.getHours() < 20)) {
     return '<span style="color:blue;font-weight:bold;">운영중<span>';
   } else {
     return '<span style="color:red;">운영종료<span>';
@@ -11,9 +11,9 @@ function hgconv() {
 
 function hgmg() {
   var date = new Date();
-  if ((date.getDate() == 6) && (date.getHours() >= 10 && date.getHours() < 17)) {
+  if ((date.getDay() == 6) && (date.getHours() >= 10 && date.getHours() < 17)) {
     return '<span style="color:blue;font-weight:bold;">운영중<span>';
-  } else if ((date.getDate() > 0 || date.getDate() < 6) && ((date.getHours() >= 9 && date.getHours() < 18) || (date.getHours() == 18 && date.getMinutes() < 30))) {
+  } else if ((date.getDay() > 0 || date.getDay() < 6) && ((date.getHours() >= 9 && date.getHours() < 18) || (date.getHours() == 18 && date.getMinutes() < 30))) {
     return '<span style="color:blue;font-weight:bold;">운영중<span>';
   } else {
     return '<span style="color:red;">운영종료<span>';
@@ -22,9 +22,9 @@ function hgmg() {
 
 function jdCU() {
   var date = new Date();
-  if ((date.getDate() == 0 || date.getDate() == 6) && (date.getHours() >= 8 && date.getHours() < 20)) {
+  if ((date.getDay() == 0 || date.getDay() == 6) && (date.getHours() >= 8 && date.getHours() < 20)) {
   return '<span style="color:blue;font-weight:bold;">운영중<span>';
-} else if ( (date.getDate() > 0 || date.getDate() < 6) && (date.getHours() >= 8 && date.getHours() < 22)) {
+} else if ( (date.getDay() > 0 || date.getDay() < 6) && (date.getHours() >= 8 && date.getHours() < 22)) {
   return '<span style="color:blue;font-weight:bold;">운영중<span>';
 } else {
   return '<span style="color:red;">운영종료<span>';
@@ -33,9 +33,9 @@ function jdCU() {
 
 function nsconv() {
   var date = new Date();
-  if (date.getDate() == 0 || date.getDate() == 6) {
+  if (date.getDay() == 0 || date.getDay() == 6) {
     return '<span style="color:red;">운영종료<span>';
-  } else if ((date.getDate() > 0 || date.getDate() < 6) && ((date.getHours() >= 10 && date.getHours() < 19) || (date.getHours() == 19 && date.getMinutes() < 30))) {
+  } else if ((date.getDay() > 0 || date.getDay() < 6) && ((date.getHours() >= 10 && date.getHours() < 19) || (date.getHours() == 19 && date.getMinutes() < 30))) {
     return '<span style="color:blue;font-weight:bold;">운영중<span>';
   } else {
     return '<span style="color:red;">운영종료<span>';
@@ -44,9 +44,9 @@ function nsconv() {
 
 function snuplex() {
   var date = new Date();
-  if (date.getDate() == 0 || date.getDate() == 6) {
+  if (date.getDay() == 0 || date.getDay() == 6) {
     return '<span style="color:red;">운영종료<span>';
-  } else if ((date.getDate() > 0 || date.getDate() < 6) && ((date.getHours() >= 9 && date.getHours() < 18) || (date.getHours() == 18 && date.getMinutes() < 30))) {
+  } else if ((date.getDay() > 0 || date.getDay() < 6) && ((date.getHours() >= 9 && date.getHours() < 18) || (date.getHours() == 18 && date.getMinutes() < 30))) {
     return '<span style="color:blue;font-weight:bold;">운영중<span>';
   } else {
     return '<span style="color:red;">운영종료<span>';
@@ -55,9 +55,9 @@ function snuplex() {
 
 function dwgconv() {
   var date = new Date();
-  if ((date.getDate() == 6) && (date.getHours() >= 9 && date.getHours() < 17)) {
+  if ((date.getDay() == 6) && (date.getHours() >= 9 && date.getHours() < 17)) {
     return '<span style="color:blue;font-weight:bold;">운영중<span>';
-  } else if ((date.getDate() > 0 || date.getDate() < 6) && ((date.getHours() >= 8 && date.getHours() < 17) || (date.getHours() == 17 && date.getMinutes() < 30))) {
+  } else if ((date.getDay() > 0 || date.getDay() < 6) && ((date.getHours() >= 8 && date.getHours() < 17) || (date.getHours() == 17 && date.getMinutes() < 30))) {
     return '<span style="color:blue;font-weight:bold;">운영중<span>';
   } else {
     return '<span style="color:red;">운영종료<span>';
@@ -66,9 +66,9 @@ function dwgconv() {
 
 function eeoconv() {
   var date = new Date();
-  if (date.getDate() == 0 || date.getDate() == 6) {
+  if (date.getDay() == 0 || date.getDay() == 6) {
     return '<span style="color:red;">운영종료<span>';
-  } else if ((date.getDate() > 0 || date.getDate() < 6) && (date.getHours() >= 9 && date.getHours() < 19)) {
+  } else if ((date.getDay() > 0 || date.getDay() < 6) && (date.getHours() >= 9 && date.getHours() < 19)) {
     return '<span style="color:blue;font-weight:bold;">운영중<span>';
   } else {
     return '<span style="color:red;">운영종료<span>';
@@ -77,9 +77,9 @@ function eeoconv() {
 
 function engCU() {
   var date = new Date();
-  if ((date.getDate() == 0 || date.getDate() == 6) && (date.getHours() >= 9 && date.getHours() < 18)) {
+  if ((date.getDay() == 0 || date.getDay() == 6) && (date.getHours() >= 9 && date.getHours() < 18)) {
   return '<span style="color:blue;font-weight:bold;">운영중<span>';
-} else if ( (date.getDate() > 0 || date.getDate() < 6) && (date.getHours() >= 8 && date.getHours() < 22)) {
+} else if ( (date.getDay() > 0 || date.getDay() < 6) && (date.getHours() >= 8 && date.getHours() < 22)) {
   return '<span style="color:blue;font-weight:bold;">운영중<span>';
 } else {
   return '<span style="color:red;">운영종료<span>';
@@ -88,9 +88,9 @@ function engCU() {
 
 function cnsconv() {
   var date = new Date();
-  if ((date.getDate() == 6) && (date.getHours() >= 10 && date.getHours() < 17)) {
+  if ((date.getDay() == 6) && (date.getHours() >= 10 && date.getHours() < 17)) {
     return '<span style="color:blue;font-weight:bold;">운영중<span>';
-  } else if ((date.getDate() > 0 || date.getDate() < 6) && ((date.getHours() >= 9 && date.getHours() < 20) || (date.getHours() == 8 && date.getMinutes() > 30))) {
+  } else if ((date.getDay() > 0 || date.getDay() < 6) && ((date.getHours() >= 9 && date.getHours() < 20) || (date.getHours() == 8 && date.getMinutes() > 30))) {
     return '<span style="color:blue;font-weight:bold;">운영중<span>';
   } else {
     return '<span style="color:red;">운영종료<span>';
@@ -108,9 +108,9 @@ function dormconv() {
 
 function vetconv() {
   var date = new Date();
-  if (date.getDate() == 0 || date.getDate() == 6) {
+  if (date.getDay() == 0 || date.getDay() == 6) {
     return '<span style="color:red;">운영종료<span>';
-  } else if ((date.getDate() > 0 || date.getDate() < 6) && (date.getHours() >= 9 && date.getHours() < 18)) {
+  } else if ((date.getDay() > 0 || date.getDay() < 6) && (date.getHours() >= 9 && date.getHours() < 18)) {
     return '<span style="color:blue;font-weight:bold;">운영중<span>';
   } else {
     return '<span style="color:red;">운영종료<span>';
@@ -119,9 +119,9 @@ function vetconv() {
 
 function medconv() {
   var date = new Date();
-  if ((date.getDate() == 6) && (date.getHours() >= 9 && date.getHours() < 18)) {
+  if ((date.getDay() == 6) && (date.getHours() >= 9 && date.getHours() < 18)) {
     return '<span style="color:blue;font-weight:bold;">운영중<span>';
-  } else if ((date.getDate() > 0 || date.getDate() < 6) && (date.getHours() >= 8 && date.getHours() < 22)) {
+  } else if ((date.getDay() > 0 || date.getDay() < 6) && (date.getHours() >= 8 && date.getHours() < 22)) {
     return '<span style="color:blue;font-weight:bold;">운영중<span>';
   } else {
     return '<span style="color:red;">운영종료<span>';

@@ -1,6 +1,6 @@
 function ststation() {
   var date = new Date();
-  if (date.getDate == 0 || date.gatDate == 6) {
+  if (date.getDay() == 0 || date.getDay() == 6) {
     return '<span style="color:red;">운행종료<span>';
   } else if (date.getHours() > 19 || date.getHours() < 8) {
     return '<span style="color:red;">운행종료<span>';
@@ -11,7 +11,7 @@ function ststation() {
 
 function stdhd() {
   var date = new Date();
-  if (date.getDate == 0 || date.gatDate == 6) {
+  if (date.getDay() == 0 || date.getDay() == 6) {
     return '<span style="color:red;">운행종료<span>';
   } else if (date.getHours() > 8 || date.getHours() < 8) {
     return '<span style="color:red;">운행종료<span>';
@@ -22,7 +22,7 @@ function stdhd() {
 
 function stsdstation() {
   var date = new Date();
-  if (date.getDate == 0 || date.gatDate == 6) {
+  if (date.getDay() == 0 || date.getDay() == 6) {
     return '<span style="color:red;">운행종료<span>';
   } else if (date.getHours() > 9 || date.getHours() < 8) {
     return '<span style="color:red;">운행종료<span>';
@@ -33,7 +33,7 @@ function stsdstation() {
 
 function stinner() {
   var date = new Date();
-  if (date.getDate == 0 || date.gatDate == 6) {
+  if (date.getDay() == 0 || date.getDay() == 6) {
     return '<span style="color:red;">운행종료<span>';
   } else if (date.getHours() > 17 || date.getHours() < 8) {
     return '<span style="color:red;">운행종료<span>';
@@ -44,7 +44,7 @@ function stinner() {
 
 function stnight() {
   var date = new Date();
-  if (date.getDate == 0 || date.gatDate == 6) {
+  if (date.getDay() == 0 || date.getDay() == 6) {
     return '<span style="color:red;">운행종료<span>';
   } else if (date.getHours() > 23 && date.getMinutes() > 10 || date.getHours() < 21) {
     return '<span style="color:red;">운행종료<span>';
@@ -55,7 +55,7 @@ function stnight() {
 
 function ststationinterval() {
   var date = new Date();
-  if (date.getDate == 0 || date.gatDate == 6) {
+  if (date.getDay() == 0 || date.getDay() == 6) {
     return '운행종료';
   } else if (date.getHours() > 19 || date.getHours() < 8) {
     return '운행종료';
