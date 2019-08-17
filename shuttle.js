@@ -57,7 +57,7 @@ function stnight() {
   } else if (date.getHours() > 23 && date.getMinutes() > 10) {
     return '<span style="color:red;">운행종료<span>';
   } else if (date.getHours() < 21 || ((date.getHours() == 21) && (date.getMinutes() < 10))) {
-    return '<span style="color:blue;font-weight:bold;">미운행</span><br /><span style="color:green;font-weight:bold;">' + gett(21, 10) + '분후시작</span>';
+    return '<span style="color:red;font-weight:bold;">미운행</span><br /><span style="color:green;font-weight:bold;">' + gett(21, 10) + '분후시작</span>';
   } else {
     return '<span style="color:blue;font-weight:bold;">운행중<span>';
   }
