@@ -1,13 +1,13 @@
 function hgconv() {
   var date = new Date();
   if ((date.getDay() == 0 || date.getDay() == 6) && (date.getHours() >= 10 && date.getHours() < 19)) {
-    return '<span style="color:blue;font-weight:bold;">운영중<br/>' + gett(19, 0) + '분후종료</span>';
+    return '<span style="color:blue;font-weight:bold;">운영중<br/>19시까지</span>';
   } else if ((date.getDay() > 0 && date.getDay() < 6) && (date.getHours() >= 8 && date.getHours() < 20)) {
-    return '<span style="color:blue;font-weight:bold;">운영중<br/>' + gett(20, 0) + '분후종료</span>';
+    return '<span style="color:blue;font-weight:bold;">운영중<br/>20시까지</span>';
   } else if ((date.getDay() == 0 || date.getDay() == 6) && date.getHours() < 10) {
-    return '<span style="color:red;">미운영</span><br /><span style="color:green;font-weight:bold;">' + gett(10, 0) + '분후시작</span>';
+    return '<span style="color:red;">미운영</span><br /><span style="color:green;font-weight:bold;">10시부터</span>';
   } else if ((date.getDay() > 0 && date.getDay() < 6) && date.getHours() < 8) {
-    return '<span style="color:red;">미운영</span><br /><span style="color:green;font-weight:bold;">' + gett(8, 0) + '분후시작</span>';
+    return '<span style="color:red;">미운영</span><br /><span style="color:green;font-weight:bold;">8시부터</span>';
   } else {
     return '<span style="color:red;">운영종료<br />오늘은끝</span>';
   }
@@ -16,13 +16,13 @@ function hgconv() {
 function hgmg() {
   var date = new Date();
   if ((date.getDay() == 6) && (date.getHours() >= 10 && date.getHours() < 17)) {
-    return '<span style="color:blue;font-weight:bold;">운영중<br/>' + gett(17, 0) + '분후종료</span>';
+    return '<span style="color:blue;font-weight:bold;">운영중<br/>17시까지</span>';
   } else if ((date.getDay() > 0 && date.getDay() < 6) && ((date.getHours() >= 9 && date.getHours() < 18) || (date.getHours() == 18 && date.getMinutes() < 30))) {
-    return '<span style="color:blue;font-weight:bold;">운영중<br />' + gett(18, 30) + '분후종료</span>';
+    return '<span style="color:blue;font-weight:bold;">운영중<br />18시30분까지</span>';
   } else if ((date.getDay() > 0 && date.getDay() < 6) && date.getHours() < 9) {
-    return '<span style="color:red;">미운영</span><br /><span style="color:green;font-weight:bold;">' + gett(9, 0) + '분후시작</span>';
+    return '<span style="color:red;">미운영</span><br /><span style="color:green;font-weight:bold;">9시부터</span>';
   } else if (date.getDay() == 6 && date.getHours() < 10) {
-    return '<span style="color:red;">미운영</span><br /><span style="color:green;font-weight:bold;">' + gett(10, 0) + '분후시작</span>';
+    return '<span style="color:red;">미운영</span><br /><span style="color:green;font-weight:bold;">10시부터</span>';
   } else if (date.getDay() == 0) {
     return '<span style="color:red;">일요일은<br />운영안함</span>';
   } else {
@@ -33,11 +33,11 @@ function hgmg() {
 function jdCU() {
   var date = new Date();
   if ((date.getDay() == 0 || date.getDay() == 6) && (date.getHours() >= 8 && date.getHours() < 20)) {
-    return '<span style="color:blue;font-weight:bold;">운영중<br/>' + gett(20, 0) + '분후종료</span>';
+    return '<span style="color:blue;font-weight:bold;">운영중<br/>20시까지</span>';
   } else if ((date.getDay() > 0 && date.getDay() < 6) && (date.getHours() >= 8 && date.getHours() < 22)) {
-    return '<span style="color:blue;font-weight:bold;">운영중<br/>' + gett(22, 0) + '분후종료</span>';
+    return '<span style="color:blue;font-weight:bold;">운영중<br/>22시까지</span>';
   } else if (date.getHours() < 8) {
-    return '<span style="color:red;">미운영</span><br /><span style="color:green;font-weight:bold;">' + gett(8, 0) + '분후시작</span>';
+    return '<span style="color:red;">미운영</span><br /><span style="color:green;font-weight:bold;">8시부터</span>';
   } else {
     return '<span style="color:red;">운영종료<br />오늘은끝</span>';
   }
@@ -48,9 +48,9 @@ function nsconv() {
   if (date.getDay() == 0 || date.getDay() == 6) {
     return '<span style="color:red;">평일에만<br />운영</span>';
   } else if ((date.getDay() > 0 && date.getDay() < 6) && ((date.getHours() >= 10 && date.getHours() < 19) || (date.getHours() == 19 && date.getMinutes() < 30))) {
-    return '<span style="color:blue;font-weight:bold;">운영중<br />' + gett(19, 30) + '분후종료</span>';
+    return '<span style="color:blue;font-weight:bold;">운영중<br />19시30분까지</span>';
   } else if (date.getHours() < 10) {
-    return '<span style="color:red;">미운영</span><br /><span style="color:green;font-weight:bold;">' + gett(10, 0) + '분후시작</span>';
+    return '<span style="color:red;">미운영</span><br /><span style="color:green;font-weight:bold;">10시부터</span>';
   } else {
     return '<span style="color:red;">운영종료<br />오늘은끝</span>';
   }
@@ -61,9 +61,9 @@ function snuplex() {
   if (date.getDay() == 0 || date.getDay() == 6) {
     return '<span style="color:red;">평일에만<br />운영</span>';
   } else if ((date.getDay() > 0 && date.getDay() < 6) && ((date.getHours() >= 9 && date.getHours() < 18) || (date.getHours() == 18 && date.getMinutes() < 30))) {
-    return '<span style="color:blue;font-weight:bold;">운영중<br />' + gett(18, 30) + '분후종료</span>';
+    return '<span style="color:blue;font-weight:bold;">운영중<br />18시30분까지</span>';
   } else if (date.getHours() < 9) {
-    return '<span style="color:red;">미운영</span><br /><span style="color:green;font-weight:bold;">' + gett(9, 0) + '분후시작</span>';
+    return '<span style="color:red;">미운영</span><br /><span style="color:green;font-weight:bold;">9시부터</span>';
   } else {
     return '<span style="color:red;">운영종료<br />오늘은끝</span>';
   }
@@ -74,13 +74,13 @@ function dwgconv() {
   if (date.getDay() == 0) {
     return '<span style="color:red;">일요일은<br />운영안함</span>';
   } else if ((date.getDay() == 6) && (date.getHours() >= 9 && date.getHours() < 17)) {
-    return '<span style="color:blue;font-weight:bold;">운영중<br />' + gett(17, 0) + '분후종료</span>';
+    return '<span style="color:blue;font-weight:bold;">운영중<br />17시까지</span>';
   } else if ((date.getDay() > 0 && date.getDay() < 6) && ((date.getHours() >= 8 && date.getHours() < 17) || (date.getHours() == 17 && date.getMinutes() < 30))) {
-    return '<span style="color:blue;font-weight:bold;">운영중<br />' + gett(19, 30) + '분후종료</span>';
+    return '<span style="color:blue;font-weight:bold;">운영중<br />19시30분까지</span>';
   } else if (date.getDay() == 6 && date.getHours() < 9) {
-    return '<span style="color:red;">미운영</span><br /><span style="color:green;font-weight:bold;">' + gett(9, 0) + '분후시작</span>';
+    return '<span style="color:red;">미운영</span><br /><span style="color:green;font-weight:bold;">9시부터</span>';
   } else if ((date.getDay() > 0 && date.getDay() < 6) && (date.getHours() < 8)) {
-    return '<span style="color:red;">미운영</span><br /><span style="color:green;font-weight:bold;">' + gett(8, 0) + '분후시작</span>';
+    return '<span style="color:red;">미운영</span><br /><span style="color:green;font-weight:bold;">8시부터</span>';
   } else {
     return '<span style="color:red;">운영종료<br />오늘은끝</span>';
   }
@@ -92,9 +92,9 @@ function eeoconv() {
   if (date.getDay() == 0 || date.getDay() == 6) {
     return '<span style="color:red;">평일에만<br />운영</span>';
   } else if ((date.getDay() > 0 && date.getDay() < 6) && (date.getHours() >= 9 && date.getHours() < 19)) {
-    return '<span style="color:blue;font-weight:bold;">운영중<br />' + gett(19, 0) + '분후종료</span>';
+    return '<span style="color:blue;font-weight:bold;">운영중<br />19시까지</span>';
   } else if (date.getHours() < 9) {
-    return '<span style="color:red;">미운영</span><br /><span style="color:green;font-weight:bold;">' + gett(9, 0) + '분후시작</span>';
+    return '<span style="color:red;">미운영</span><br /><span style="color:green;font-weight:bold;">9시부터</span>';
   } else {
     return '<span style="color:red;">운영종료<br />오늘은끝</span>';
   }
@@ -104,13 +104,13 @@ function eeoconv() {
 function engCU() {
   var date = new Date();
   if ((date.getDay() == 0 || date.getDay() == 6) && (date.getHours() >= 9 && date.getHours() < 18)) {
-    return '<span style="color:blue;font-weight:bold;">운영중<br />' + gett(18, 0) + '분후종료</span>';
+    return '<span style="color:blue;font-weight:bold;">운영중<br />18시까지</span>';
   } else if ((date.getDay() > 0 && date.getDay() < 6) && (date.getHours() >= 8 && date.getHours() < 22)) {
-    return '<span style="color:blue;font-weight:bold;">운영중<br />' + gett(22, 0) + '분후종료</span>';
+    return '<span style="color:blue;font-weight:bold;">운영중<br />22시까지</span>';
   } else if ((date.getDay() == 0 || date.getDay() == 6) && (date.getHours() < 9)) {
-    return '<span style="color:red;">미운영</span><br /><span style="color:green;font-weight:bold;">' + gett(9, 0) + '분후시작</span>';
+    return '<span style="color:red;">미운영</span><br /><span style="color:green;font-weight:bold;">9시부터</span>';
   } else if ((date.getDay() > 0 && date.getDay() < 6) && (date.getHours() < 8)) {
-    return '<span style="color:red;">미운영</span><br /><span style="color:green;font-weight:bold;">' + gett(8, 0) + '분후시작</span>';
+    return '<span style="color:red;">미운영</span><br /><span style="color:green;font-weight:bold;">8시부터</span>';
   } else {
     return '<span style="color:red;">운영종료<br />오늘은끝</span>';
   }
@@ -122,13 +122,13 @@ function cnsconv() {
   if (date.getDay() == 0) {
     return '<span style="color:red;">일요일은<br />운영안함</span>';
   } else if ((date.getDay() == 6) && (date.getHours() >= 10 && date.getHours() < 17)) {
-    return '<span style="color:blue;font-weight:bold;">운영중<br />' + gett(17, 0) + '분후종료</span>';
+    return '<span style="color:blue;font-weight:bold;">운영중<br />17시까지</span>';
   } else if ((date.getDay() > 0 && date.getDay() < 6) && ((date.getHours() >= 9 && date.getHours() < 20) || (date.getHours() == 8 && date.getMinutes() >= 30))) {
-    return '<span style="color:blue;font-weight:bold;">운영중<br />' + gett(20, 0) + '분후종료</span>';
+    return '<span style="color:blue;font-weight:bold;">운영중<br />20시까지</span>';
   } else if (date.getDay() == 6 && date.getHours() < 10) {
-    return '<span style="color:red;">미운영</span><br /><span style="color:green;font-weight:bold;">' + gett(10, 0) + '분후시작</span>';
+    return '<span style="color:red;">미운영</span><br /><span style="color:green;font-weight:bold;">10시부터</span>';
   } else if ((date.getDay() > 0 && date.getDay() < 6) && ((date.getHours() < 8) || (date.getHours() == 8 && date.getMinutes() < 30))) {
-    return '<span style="color:red;">미운영</span><br /><span style="color:green;font-weight:bold;">' + gett(8, 30) + '분후시작</span>';
+    return '<span style="color:red;">미운영</span><br /><span style="color:green;font-weight:bold;">8시30분부터</span>';
   } else {
     return '<span style="color:red;">운영종료<br />오늘은끝</span>';
   }
@@ -137,13 +137,13 @@ function cnsconv() {
 function dormconv() {
   var date = new Date();
   if (date.getHours() >= 8 && date.getHours() < 24) {
-    return '<span style="color:blue;font-weight:bold;">운영중<br />' + gett(25, 30) + '분후종료</span>';
+    return '<span style="color:blue;font-weight:bold;">운영중<br />밤1시반까지</span>';
   } else if (date.getHours() == 0 || (date.getHours() == 1 && date.getMinutes() < 30)) {
-    return '<span style="color:blue;font-weight:bold;">운영중<br />' + gett(1, 30) + '분후종료</span>';
+    return '<span style="color:blue;font-weight:bold;">운영중<br />밤1시반까지</span>';
   } else if (date.getHours() < 8) {
-    return '<span style="color:red;font-weight:bold;">미운영</span><br /><span style="color:green;font-weight:bold;">' + gett(8, 0) + '분후시작</span>';
+    return '<span style="color:red;font-weight:bold;">미운영</span><br /><span style="color:green;font-weight:bold;">8시부터</span>';
   } else {
-    return '<span style="color:red;">운영종료<br />오늘은끝</span>';
+    return '<span style="color:red;font-weight:bold;">미운영</span><br /><span style="color:green;font-weight:bold;">8시부터</span>';
   }
 }
 
@@ -152,9 +152,9 @@ function vetconv() {
   if (date.getDay() == 0 || date.getDay() == 6) {
     return '<span style="color:red;">평일에만<br />운영</span>';
   } else if ((date.getDay() > 0 && date.getDay() < 6) && (date.getHours() >= 9 && date.getHours() < 18)) {
-    return '<span style="color:blue;font-weight:bold;">운영중<br />' + gett(18, 0) + '분후종료</span>';
+    return '<span style="color:blue;font-weight:bold;">운영중<br />18시까지</span>';
   } else if (date.getHours() < 9) {
-    return '<span style="color:red;font-weight:bold;">미운영</span><br /><span style="color:green;font-weight:bold;">' + gett(9, 0) + '분후시작</span>';
+    return '<span style="color:red;font-weight:bold;">미운영</span><br /><span style="color:green;font-weight:bold;">9시부터</span>';
   } else {
     return '<span style="color:red;">운영종료<br />오늘은끝</span>';
   }
@@ -165,13 +165,13 @@ function medconv() {
   if (date.getDay() == 0) {
     return '<span style="color:red;">일요일은<br />운영안함</span>';
   } else if ((date.getDay() == 6) && (date.getHours() >= 9 && date.getHours() < 18)) {
-    return '<span style="color:blue;font-weight:bold;">운영중<br />' + gett(18, 0) + '분후종료</span>';
+    return '<span style="color:blue;font-weight:bold;">운영중<br />18시까지</span>';
   } else if ((date.getDay() > 0 && date.getDay() < 6) && (date.getHours() >= 8 && date.getHours() < 22)) {
-    return '<span style="color:blue;font-weight:bold;">운영중<br />' + gett(22, 0) + '분후종료</span>';
+    return '<span style="color:blue;font-weight:bold;">운영중<br />22시까지</span>';
   } else if ((date.getDay() == 6) && (date.getHours() < 9)) {
-    return '<span style="color:red;font-weight:bold;">미운영</span><br /><span style="color:green;font-weight:bold;">' + gett(9, 0) + '분후시작</span>';
+    return '<span style="color:red;font-weight:bold;">미운영</span><br /><span style="color:green;font-weight:bold;">9시부터</span>';
   } else if ((date.getDay() > 0 && date.getDay() < 6) && (date.getHours() < 8)) {
-    return '<span style="color:red;font-weight:bold;">미운영</span><br /><span style="color:green;font-weight:bold;">' + gett(8, 0) + '분후시작</span>';
+    return '<span style="color:red;font-weight:bold;">미운영</span><br /><span style="color:green;font-weight:bold;">8시부터</span>';
   } else {
     return '<span style="color:red;">운영종료<br />오늘은끝</span>';
   }
