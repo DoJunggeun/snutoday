@@ -217,6 +217,7 @@ function pascucci() {
     return '<span style="color:red;">운영종료<br />오늘은끝</span>';
   }
 }
+
 function hollys() {
   var date = new Date();
   if (date.getHours() >= 8 && date.getHours() < 22) {
@@ -238,6 +239,21 @@ function quiz() {
     return '<span style="color:red;">미운영</span><br /><span style="color:green;font-weight:bold;">9시부터</span>';
   } else if ((date.getDay() > 0 && date.getDay() < 6) && (date.getHours() < 7)) {
     return '<span style="color:red;">미운영</span><br /><span style="color:green;font-weight:bold;">7시부터</span>';
+  } else {
+    return '<span style="color:red;">운영종료<br />오늘은끝</span>';
+  }
+}
+
+function cafegran() {
+  var date = new Date();
+  if ((date.getDay() == 0 || date.getDay() == 6) && ((date.getHours() >= 8 && date.getHours() < 21) || (date.getHours() == 7 && date.getMinutes() >= 30))) {
+    return '<span style="color:blue;font-weight:bold;">운영중<br/>21시까지</span>';
+  } else if ((date.getDay() > 0 && date.getDay() < 6) && ((date.getHours() >= 8 && date.getHours() < 22) || (date.getHours() == 7 && date.getMinutes() >= 30))) {
+    return '<span style="color:blue;font-weight:bold;">운영중<br/>22시까지</span>';
+  } else if ((date.getDay() == 0 || date.getDay() == 6) && (date.getHours() == 7 && date.getMinutes() < 30)) {
+    return '<span style="color:red;">미운영</span><br /><span style="color:green;font-weight:bold;">7시30분부터</span>';
+  } else if ((date.getDay() > 0 && date.getDay() < 6) && (date.getHours() == 7 && date.getMinutes() < 30)) {
+    return '<span style="color:red;">미운영</span><br /><span style="color:green;font-weight:bold;">7시30분부터</span>';
   } else {
     return '<span style="color:red;">운영종료<br />오늘은끝</span>';
   }

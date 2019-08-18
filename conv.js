@@ -176,3 +176,7 @@ function medconv() {
     return '<span style="color:red;">운영종료<br />오늘은끝</span>';
   }
 }
+
+function allday(){
+  return '<span style="color:blue;font-weight:bold;">24시간운영</span>';
+}
