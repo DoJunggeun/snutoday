@@ -85,53 +85,58 @@
 
     <!-- Contact section -->
     <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large">
-      <center>
-        <h2>주변에 많이 알리고 이용해주세요ㅎㅎ!</h2>
-        <p>카카오톡으로 공유하기</p>
-        <a id="kakao-link-btn" href="javascript:sendLink()">
-          <img src="//developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png" />
-        </a>
-        <script type='text/javascript'>
-          //<![CDATA[
-          // // 사용할 앱의 JavaScript 키를 설정해 주세요.
-          Kakao.init('5bf552be44dafb22aea574dc74a4f4e9');
-          // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
-          Kakao.Link.createDefaultButton({
-            container: '#kakao-link-btn',
-            objectType: 'feed',
-            content: {
-              title: '서울대 지금 이거 하나요?',
-              description: '#셔틀 #식당 #매점 #카페',
-              imageUrl: 'https://dojunggeun.github.io/snutoday/img/snumain.jpg',
-              link: {
-                mobileWebUrl: 'https://dojunggeun.github.io/snutoday',
-                webUrl: 'https://dojunggeun.github.io/snutoday'
-              }
-            },
-            buttons: [{
-              title: '보러가기',
-              link: {
-                mobileWebUrl: 'https://dojunggeun.github.io/snutoday',
-                webUrl: 'https://dojunggeun.github.io/snutoday'
-              }
-            }]
-          });
-          //]]>
-        </script>
 
-        <p>
-          페이스북으로 공유하기
-        </p>
-        <div id="fb-root"></div>
-        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v4.0"></script>
-        <div class="fb-share-button"
-        data-href="https://dojunggeun.github.io/snutoday/"
-        data-layout="button"
-        data-size="large">
-        <a target="_blank"
-            href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">공유하기</a></div>
+      <div class="w3-row">
+        <center>
+          <h4>주변에 많이 알리고 이용해주세요ㅎㅎ!<br /></h4>
 
-      </center>
+          <h5>카카오톡으로 공유하기</h5>
+          <a id="kakao-link-btn" href="javascript:sendLink()">
+            <img src="//developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png" />
+          </a>
+          <script type='text/javascript'>
+            //<![CDATA[
+            // // 사용할 앱의 JavaScript 키를 설정해 주세요.
+            Kakao.init('5bf552be44dafb22aea574dc74a4f4e9');
+            // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
+            Kakao.Link.createDefaultButton({
+              container: '#kakao-link-btn',
+              objectType: 'feed',
+              content: {
+                title: '서울대 지금 이거 하나요?',
+                description: '#셔틀 #식당 #매점 #카페',
+                imageUrl: 'https://dojunggeun.github.io/snutoday/img/snumain.jpg',
+                link: {
+                  mobileWebUrl: 'https://dojunggeun.github.io/snutoday',
+                  webUrl: 'https://dojunggeun.github.io/snutoday'
+                }
+              },
+              buttons: [{
+                title: '보러가기',
+                link: {
+                  mobileWebUrl: 'https://dojunggeun.github.io/snutoday',
+                  webUrl: 'https://dojunggeun.github.io/snutoday'
+                }
+              }]
+            });
+          </script>
+        </center>
+
+        <center>
+          <h5>
+            페이스북으로 공유하기
+          </h5>
+          <div id="fb-root"></div>
+          <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v4.0"></script>
+          <div class="fb-share-button"
+          data-href="https://dojunggeun.github.io/snutoday/"
+          data-layout="button"
+          data-size="large">
+            <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">공유하기</a></div>
+        </center>
+      </div>
+
+
 
 
     </div>
