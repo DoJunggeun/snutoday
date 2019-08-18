@@ -71,7 +71,7 @@ function hgmeal() {
 function hgmeal2() {
   var date = new Date();
   if (date.getDay() == 0 || date.getDay() == 6) {
-    return '<span style="color:red;">평일에만<br />운영</span>';
+    return '<span style="color:red;">주말에는<br />운영안함</span>';
   } else if ((date.getHours() >= 11 && date.getHours() < 13) || (date.getHours() == 13 && date.getMinutes() < 30)) {
     return '<span style="color:blue;font-weight:bold;">운영중<br/>13시30분까지</span>';
   } else if ((date.getDay() > 0 && date.getDay() < 6) && (date.getHours() >= 14 && date.getHours() < 18)) {
@@ -88,7 +88,7 @@ function hgmeal2() {
 function gongmeal() {
   var date = new Date();
   if (date.getDay() == 0 || date.getDay() == 6) {
-    return '<span style="color:red;">평일에만<br />운영</span>';
+    return '<span style="color:red;">주말에는<br />운영안함</span>';
   } else if (date.getHours() >= 11 && date.getHours() < 19) {
     return '<span style="color:blue;font-weight:bold;">운영중<br/>19시까지</span>';
   } else if (date.getHours() < 11) {
@@ -101,7 +101,7 @@ function gongmeal() {
 function eng302meal() {
   var date = new Date();
   if (date.getDay() == 0 || date.getDay() == 6) {
-    return '<span style="color:red;">평일에만<br />운영</span>';
+    return '<span style="color:red;">주말에는<br />운영안함</span>';
   } else if ((date.getHours() > 11 && date.getHours() < 14) || (date.getHours() == 11 && date.getMinutes() >= 15)) {
     return '<span style="color:blue;font-weight:bold;">운영중<br/>14시까지</span>';
   } else if (date.getHours() >= 17 && date.getHours() < 19) {
@@ -118,7 +118,7 @@ function eng302meal() {
 function eng301meal() {
   var date = new Date();
   if (date.getDay() == 0 || date.getDay() == 6) {
-    return '<span style="color:red;">평일에만<br />운영</span>';
+    return '<span style="color:red;">주말에는<br />운영안함</span>';
   } else if (date.getHours() >= 11 && date.getHours() < 14) {
     return '<span style="color:blue;font-weight:bold;">운영중<br/>14시까지</span>';
   } else if (date.getHours() >= 17 && date.getHours() < 19) {
@@ -135,7 +135,7 @@ function eng301meal() {
 function artmeal() {
   var date = new Date();
   if (date.getDay() == 0 || date.getDay() == 6) {
-    return '<span style="color:red;">평일에만<br />운영</span>';
+    return '<span style="color:red;">주말에는<br />운영안함</span>';
   } else if ((date.getHours() == 11 && date.getMinutes() >= 30) || (date.getHours() > 11 && date.getHours() < 14)) {
     return '<span style="color:blue;font-weight:bold;">운영중<br/>14시까지</span>';
   } else if (date.getHours() >= 17 && date.getHours() < 19) {
@@ -153,7 +153,7 @@ function artmeal() {
 function ggmeal() {
   var date = new Date();
   if (date.getDay() == 0 || date.getDay() == 6) {
-    return '<span style="color:red;">평일에만<br />운영</span>';
+    return '<span style="color:red;">주말에는<br />운영안함</span>';
   } else if (date.getHours() >= 11 && date.getHours() < 14) {
     return '<span style="color:blue;font-weight:bold;">운영중<br/>14시까지</span>';
   } else if ((date.getHours() >= 17 && date.getHours() < 18) || (date.getHours() == 18 && date.getMinutes() < 30)) {
@@ -191,7 +191,7 @@ function meal220() {
 function m11141719() {
   var date = new Date();
   if (date.getDay() == 0 || date.getDay() == 6) {
-    return '<span style="color:red;">평일에만<br />운영</span>';
+    return '<span style="color:red;">주말에는<br />운영안함</span>';
   } else if (date.getHours() >= 11 && date.getHours() < 14) {
     return '<span style="color:blue;font-weight:bold;">운영중<br/>14시까지</span>';
   } else if (date.getHours() >= 17 && date.getHours() < 19) {

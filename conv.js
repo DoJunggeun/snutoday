@@ -46,7 +46,7 @@ function jdCU() {
 function nsconv() {
   var date = new Date();
   if (date.getDay() == 0 || date.getDay() == 6) {
-    return '<span style="color:red;">평일에만<br />운영</span>';
+    return '<span style="color:red;">주말에는<br />운영안함</span>';
   } else if ((date.getDay() > 0 && date.getDay() < 6) && ((date.getHours() >= 10 && date.getHours() < 19) || (date.getHours() == 19 && date.getMinutes() < 30))) {
     return '<span style="color:blue;font-weight:bold;">운영중<br />19시30분까지</span>';
   } else if (date.getHours() < 10) {
@@ -59,7 +59,7 @@ function nsconv() {
 function snuplex() {
   var date = new Date();
   if (date.getDay() == 0 || date.getDay() == 6) {
-    return '<span style="color:red;">평일에만<br />운영</span>';
+    return '<span style="color:red;">주말에는<br />운영안함</span>';
   } else if ((date.getDay() > 0 && date.getDay() < 6) && ((date.getHours() >= 9 && date.getHours() < 18) || (date.getHours() == 18 && date.getMinutes() < 30))) {
     return '<span style="color:blue;font-weight:bold;">운영중<br />18시30분까지</span>';
   } else if (date.getHours() < 9) {
@@ -90,7 +90,7 @@ function dwgconv() {
 function eeoconv() {
   var date = new Date();
   if (date.getDay() == 0 || date.getDay() == 6) {
-    return '<span style="color:red;">평일에만<br />운영</span>';
+    return '<span style="color:red;">주말에는<br />운영안함</span>';
   } else if ((date.getDay() > 0 && date.getDay() < 6) && (date.getHours() >= 9 && date.getHours() < 19)) {
     return '<span style="color:blue;font-weight:bold;">운영중<br />19시까지</span>';
   } else if (date.getHours() < 9) {
@@ -150,7 +150,7 @@ function dormconv() {
 function vetconv() {
   var date = new Date();
   if (date.getDay() == 0 || date.getDay() == 6) {
-    return '<span style="color:red;">평일에만<br />운영</span>';
+    return '<span style="color:red;">주말에는<br />운영안함</span>';
   } else if ((date.getDay() > 0 && date.getDay() < 6) && (date.getHours() >= 9 && date.getHours() < 18)) {
     return '<span style="color:blue;font-weight:bold;">운영중<br />18시까지</span>';
   } else if (date.getHours() < 9) {
