@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145841262-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145841262-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-145841262-1');
-</script>
-<title>지금 셔틀 하나요?</title>
-<meta charset="UTF-8">
-<meta property="og:type" content="website">
-<meta property="og:title" content="서울대 지금 셔틀 하나요?">
-<meta property="og:url" content="https://dojunggeun.github.io/snutoday/shuttle.html">
-<meta property="og:description" content="셔틀/매점/식당 운영시간 제공">
-<meta property="og:image" content="./img/st.jpg">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
-<script type="text/javascript" src="shuttle.js"></script>
-<script type="text/javascript" src="functions.js"></script>
-<script type="text/javascript" src="design.js"></script>
-<link rel="stylesheet" type="text/css" href="style.css" />
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-145841262-1');
+  </script>
+  <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+  <title>지금 이거 하나요?</title>
+  <meta charset="UTF-8">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="서울대 지금 ㅇㅇ 하나요?">
+  <meta property="og:url" content="https://dojunggeun.github.io/snutoday/index.html">
+  <meta property="og:description" content="셔틀/매점/식당 운영시간 제공">
+  <meta property="og:image" content="./img/snumain.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="design.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
+
 <body class="w3-light-grey w3-content" style="max-width:1600px">
   ​
   <!-- Sidebar/menu -->
@@ -81,97 +85,27 @@
 
 
     <!-- Contact section -->
-    <center>
-      <span style="font-size:20px; font-weight:bold; text-decoration:underline; cursor:pointer;" onclick="window.open('./img/sttt.jpg')">셔틀버스 시간표 전체보기</span>
-    </center>
-
     <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large">
-      <center>
-        <p>셔틀버스는 평일(토요일, 일요일, 공휴일 제외)에만<br />운영합니다.</p>
-      </center>
-      <table class="w3-table-all w3-hoverable">
-        <thead>
-          <tr class="w3-light-grey">
-            <th>구간</th>
-            <th>운행시간</th>
-            <th>배차간격</th>
-            <th>현재</th>
-          </tr>
-        </thead>
-        <tr>
-          <td>서울대입구역<br />↔<br />행정관</td>
-          <td>08:00~19:00</td>
-          <td>
-            <script>
-              document.write(ststationinterval());
-            </script>
-          </td>
-          <td>
-            <script>
-              document.write(ststation());
-            </script>
-          </td>
-        </tr>
-        <tr>
-          <td>대학동<br />↔<br />행정관</td>
-          <td>08:00~09:00</td>
-          <td>10~12분</td>
-          <td>
-            <script>
-              document.write(stdhd());
-            </script>
-          </td>
-        </tr>
-        <tr>
-          <td>사당역<br />→<br />행정관</td>
-          <td>08:00~10:00</td>
-          <td>10분</td>
-          <td>
-            <script>
-              document.write(stsdstation());
-            </script>
-          </td>
-        </tr>
-        <tr>
-          <td>교내순환</td>
-          <td>08:00~18:00</td>
-          <td>10분</td>
-          <td>
-            <script>
-              document.write(stinner());
-            </script>
-          </td>
-        </tr>
-        <tr>
-          <td>(야간)<br />행정관<br />→<br />서울대입구역</td>
-          <td>21:10~23:10</td>
-          <td>30분</td>
-          <td>
-            <script>
-              document.write(stnight());
-            </script>
-          </td>
-        </tr>
-        <tr>
-          <td>(야간)<br />행정관<br />→<br />대학동</td>
-          <td>21:10~23:10</td>
-          <td>30분</td>
-          <td>
-            <script>
-              document.write(stnight());
-            </script>
-          </td>
-        </tr>
-      </table>
-
-
+      <div class="w3-row">
+        <center>
+          <h4>앱으로 다운로드 받아서 이용하세요!</h4>
+          <div style="width:350px;">
+          <br />
+            <a href="snutoday.apk" download><img src="./img/apk.png" style="width:350px;" /></a>
+          <br />
+            <span  onclick="alert('준비 중입니다.')"><img src="./img/googleplay.png" style="width:350px;"/></span>
+          <br />
+            <span onclick="alert('준비 중입니다.')"><img src="./img/appstore.png" style="width:350px;"/></span>
+          <br />
+        </div>
+        </center>
+      </div>
     </div>
 
     <div class="w3-black w3-center w3-padding-24">제작자 : 물리천문 15 도정근</div>
 
     <!-- End page content -->
   </div>
-
 
 </body>
 
