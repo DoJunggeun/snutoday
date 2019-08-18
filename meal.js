@@ -204,3 +204,40 @@ function m11141719() {
     return '<span style="color:red;">운영종료</span>';
   }
 }
+
+
+function loungeo() {
+  var date = new Date();
+  if (date.getHours() >= 11 && date.getHours() < 21) {
+    return '<span style="color:blue;font-weight:bold;">운영중<br/>21시까지</span>';
+  } else if (date.getHours() < 11) {
+    return '<span style="color:red;">미운영</span><br /><span style="color:green;font-weight:bold;">11시부터<br/>운영시작</span>';
+  } else {
+    return '<span style="color:red;">운영종료<br />오늘은끝</span>';
+  }
+}
+
+function shaban() {  
+  var date = new Date();
+  if (date.getDay() == 0) {
+    return '<span style="color:red;">일요일은<br />운영안함</span>';
+  } else if (date.getDay() == 6) {
+    if (date.getHours() < 11 || (date.getHours() == 11 && date.getMinutes() < 30)) {
+      return '<span style="color:red;">미운영</span><br /><span style="color:green;font-weight:bold;">11시30분부터<br/>점심시작</span>';
+    } else if ((date.getHours() >= 12 && date.getHours() < 14) || (date.getHours() == 11 && date.getMinutes() >= 30)) {
+      return '<span style="color:blue;font-weight:bold;">운영중<br/>14시까지</span>';
+    } else {
+      return '<span style="color:red;">운영종료<br />오늘은끝</span>';
+    }
+  } else if (date.getHours() < 11) {
+    return '<span style="color:red;">미운영</span><br /><span style="color:green;font-weight:bold;">11시부터<br/>점심시작</span>';
+  } else if ((date.getHours() >= 11 && date.getHours() < 14) || (date.getHours() == 14 && date.getMinutes() < 30)) {
+    return '<span style="color:blue;font-weight:bold;">운영중<br/>14시30분까지</span>';
+  } else if ((date.getHours() == 14 && date.getMinutes() >= 30) || date.getHours() == 15 || (date.getHours() == 16 && date.getMinutes() < 30)) {
+    return '<span style="color:red;">미운영</span><br /><span style="color:green;font-weight:bold;">16시30분부터<br/>저녁시작</span>';
+  } else if ((date.getHours() >= 17 && date.getHours() < 20) || (date.getHours() == 16 && date.getMinutes() >= 30)) {
+    return '<span style="color:blue;font-weight:bold;">운영중<br/>20시까지</span>';
+  } else {
+    return '<span style="color:red;">운영종료<br />오늘은끝</span>';
+  }
+}
