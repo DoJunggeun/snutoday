@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145841262-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145841262-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-145841262-1');
-</script>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
 
-<title>지금 이거 하나요?</title>
-<meta charset="UTF-8">
-<meta property="og:type" content="website">
-<meta property="og:title" content="서울대 지금 ㅇㅇ 하나요?">
-<meta property="og:url" content="https://dojunggeun.github.io/snutoday/index.html">
-<meta property="og:description" content="셔틀/매점/식당 운영시간 제공">
-<meta property="og:image" content="./img/snumain.jpg">
-<script type="text/javascript" src="design.js"></script>
+    gtag('config', 'UA-145841262-1');
+  </script>
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="style.css" />
+  <title>지금 이거 하나요?</title>
+  <meta charset="UTF-8">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="서울대 지금 ㅇㅇ 하나요?">
+  <meta property="og:url" content="https://dojunggeun.github.io/snutoday/index.html">
+  <meta property="og:description" content="셔틀/매점/식당 운영시간 제공">
+  <meta property="og:image" content="./img/snumain.jpg">
+  <script type="text/javascript" src="design.js"></script>
+  <script type="text/javascript" src="functions.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
 <body class="w3-light-grey w3-content" style="max-width:1600px">
@@ -47,7 +52,7 @@
   <!-- Top menu on small screens -->
   <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
     <span class="w3-left w3-padding" style="font-weight:800; font-size:22px;" onclick="location.href='index.html'">서울대 지금 이거 하나요?</span>
-    <a href="javascript:void(0)" class="w3-right w3-button w3-white"  onclick="w3_open()">☰</a>
+    <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
   </header>
   ​
   <!-- Overlay effect when opening sidebar on small <scr></scr>eens -->
@@ -87,6 +92,15 @@
       </div>
     </div>
 
+    <div >
+      <div class="w3-display-container w3-hover-shadow" onclick="gwangst()" style="width:100%;height:100px;background-color:white;font-size:15px;border:#dddddd 1px solid;">
+        <div class="w3-display-middle w3-large"> 9월 광역셔틀 하나요? </div>
+      </div>
+      <div class="w3-display-container w3-hover-shadow" onclick="alert('준비중입니다.')" style="width:100%;height:100px;background-color:white;font-size:15px;border:#dddddd 1px solid;">
+        <div class="w3-display-middle w3-large"> 추석 귀향버스 하나요? </div>
+      </div>
+    </div>
+
 
     <!-- Pagination
         <div class="w3-center w3-padding-32">
@@ -116,4 +130,5 @@
   </div>
 
 </body>
+
 </html>
