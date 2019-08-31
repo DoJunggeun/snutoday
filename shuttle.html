@@ -1,31 +1,36 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145841262-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145841262-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-145841262-1');
-</script>
-<title>지금 셔틀 하나요?</title>
-<meta charset="UTF-8">
-<meta property="og:type" content="website">
-<meta property="og:title" content="서울대 지금 셔틀 하나요?">
-<meta property="og:url" content="https://dojunggeun.github.io/snutoday/shuttle.html">
-<meta property="og:description" content="셔틀/매점/식당 운영시간 제공">
-<meta property="og:image" content="./img/st.jpg">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
-<script type="text/javascript" src="shuttle.js"></script>
-<script type="text/javascript" src="functions.js"></script>
-<script type="text/javascript" src="design.js"></script>
-<link rel="stylesheet" type="text/css" href="style.css" />
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-145841262-1');
+  </script>
+  <title>지금 셔틀 하나요?</title>
+  <meta charset="UTF-8">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="서울대 지금 셔틀 하나요?">
+  <meta property="og:url" content="https://dojunggeun.github.io/snutoday/shuttle.html">
+  <meta property="og:description" content="셔틀/매점/식당 운영시간 제공">
+  <meta property="og:image" content="./img/st.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="shuttle.js"></script>
+  <script type="text/javascript" src="functions.js"></script>
+  <script type="text/javascript" src="design.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
+
 <body class="w3-light-grey w3-content" style="max-width:1600px">
   ​
   <!-- Sidebar/menu -->
@@ -114,8 +119,12 @@
         </tr>
         <tr>
           <td>대학동<br />↔<br />행정관</td>
-          <td>08:00~09:00</td>
-          <td>10~12분</td>
+          <td>08:00~19:00</td>
+          <td>
+            <script>
+              document.write(stdhdinterval());
+            </script>
+          </td>stdhdinterval()
           <td>
             <script>
               document.write(stdhd());
@@ -124,7 +133,7 @@
         </tr>
         <tr>
           <td>사당역<br />→<br />행정관</td>
-          <td>08:00~10:00</td>
+          <td>08:00~11:00</td>
           <td>10분</td>
           <td>
             <script>
@@ -134,8 +143,12 @@
         </tr>
         <tr>
           <td>교내순환</td>
-          <td>08:00~18:00</td>
-          <td>10분</td>
+          <td>08:00~21:00</td>
+          <td>10분
+            <script>
+                document.write(stinnerinterval());
+            </script>
+          </td>
           <td>
             <script>
               document.write(stinner());
@@ -164,7 +177,9 @@
         </tr>
       </table>
 
-
+      <p>
+        추가 예정 : 낙성대 셔틀, 공대 셔틀, 역방향 순환셔틀, 심야셔틀
+      </p>
     </div>
 
     <div class="w3-black w3-center w3-padding-24">제작자 : 물리천문 15 도정근</div>

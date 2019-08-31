@@ -7,7 +7,7 @@ function ststation() {
   } else if (date.getHours() == 19) {
     return '<span style="color:blue;font-weight:bold;">학교→설입<br />운행중<br />19시까지</span>';
   } else if (date.getHours() < 8) {
-    return '<span style="color:red;">미운행</span><br /><span style="color:green;font-weight:bold;">8시부터</span>';
+    return '<span style="color:red;">미운행</span><br /><span style="color:green;font-weight:bold;">7시부터</span>';
   } else {
     return '<span style="color:blue;font-weight:bold;">운행중<br />19시까지</span>';
   }
@@ -17,12 +17,14 @@ function stdhd() {
   var date = new Date();
   if (date.getDay() == 0 || date.getDay() == 6) {
     return '<span style="color:red;">주말에는<br />운행안함<span>';
-  } else if (date.getHours() > 8) {
+  } else if (date.getHours() >= 19) {
     return '<span style="color:red;">운행종료<span>';
+  } else if (date.getHours() == 19) {
+    return '<span style="color:blue;font-weight:bold;">학교→녹두<br />운행중<br />19시까지</span>';
   } else if (date.getHours() < 8) {
-    return '<span style="color:red;">미운행</span><br /><span style="color:green;font-weight:bold;">8시부터</span>';
+    return '<span style="color:red;">미운행</span><br /><span style="color:green;font-weight:bold;">7시부터</span>';
   } else {
-    return '<span style="color:blue;font-weight:bold;">운행중<br />9시까지</span>';
+    return '<span style="color:blue;font-weight:bold;">운행중<br />19시까지</span>';
   }
 }
 
@@ -30,12 +32,12 @@ function stsdstation() {
   var date = new Date();
   if (date.getDay() == 0 || date.getDay() == 6) {
     return '<span style="color:red;">주말에는<br />운행안함<span>';
-  } else if (date.getHours() > 9) {
+  } else if (date.getHours() > 10) {
     return '<span style="color:red;">운행종료<span>';
   } else if (date.getHours() < 8) {
     return '<span style="color:red;">미운행</span><br /><span style="color:green;font-weight:bold;">8시부터</span>';
   } else {
-    return '<span style="color:blue;font-weight:bold;">운행중<br />10시까지</span>';
+    return '<span style="color:blue;font-weight:bold;">운행중<br />11시까지</span>';
   }
 }
 
@@ -43,12 +45,12 @@ function stinner() {
   var date = new Date();
   if (date.getDay() == 0 || date.getDay() == 6) {
     return '<span style="color:red;">주말에는<br />운행안함<span>';
-  } else if (date.getHours() > 17) {
+  } else if (date.getHours() > 20) {
     return '<span style="color:red;">운행종료<span>';
   } else if (date.getHours() < 8) {
     return '<span style="color:red;">미운행</span><br /><span style="color:green;font-weight:bold;">8시부터</span>';
   } else {
-    return '<span style="color:blue;font-weight:bold;">운행중<br />18시까지</span>';
+    return '<span style="color:blue;font-weight:bold;">운행중<br />21시까지</span>';
   }
 }
 
@@ -69,15 +71,51 @@ function ststationinterval() {
   var date = new Date();
   if (date.getDay() == 0 || date.getDay() == 6) {
     return '운행안함';
-  } else if (date.getHours() > 19 || date.getHours() < 8) {
+  } else if (date.getHours() > 19 || date.getHours() < 7) {
     return '운행안함';
-  } else if (date.getHours() == 8) {
-    return '5~10분';
-  } else if (date.getHours() == 9 || date.getHours() == 10) {
-    return '10분';
-  } else if (date.getHours() >= 11 || date.getHours() < 16) {
+  } else if (date.getHours() == 7) {
+    return '15분';
+  } else if (date.getHours() >= 8 && date.getHours() < 11 ){
     return '5~7분';
-  } else if (date.getHours() == 18 && date.getHours() >= 16) {
-    return '10~15분';
+  } else if ((date.getHours() >= 11 && date.getHours() < 15 ) || (date.getHours() == 15 && date.getMinutes() < 30 )){
+    return '10분';
+  } else if (date.getHours() >= 15 || date.getHours() < 17) {
+    return '7~10분';
+  } else if (date.getHours() == 17 || date.getHours() == 18) {
+    return '5~7분';
+  }
+}
+
+function stdhdinterval() {
+  var date = new Date();
+  if (date.getDay() == 0 || date.getDay() == 6) {
+    return '운행안함';
+  } else if (date.getHours() > 19 || date.getHours() < 7) {
+    return '운행안함';
+  } else if (date.getHours() == 7) {
+    return '15분';
+  } else if (date.getHours() >= 8 && date.getHours() < 10 ){
+    return '6분';
+  } else if ((date.getHours() >= 10 && date.getHours() < 12 ) || (date.getHours() == 12 && date.getMinutes() < 10 )){
+    return '10분';
+  } else if (date.getHours() == 12 || (date.getHours() == 13 && date.getMinutes() < 30 )) {
+    return '15분';
+  } else if (date.getHours() >= 13 && date.getHours() < 17) {
+    return '10분';
+  } else if (date.getHours() == 17 || date.getHours() == 18) {
+    return '6분';
+  }
+}
+
+function stinnerinterval() {
+  var date = new Date();
+  if (date.getDay() == 0 || date.getDay() == 6) {
+    return '운행안함';
+  } else if (date.getHours() > 20 || date.getHours() < 7) {
+    return '운행안함';
+  } else if (date.getHours() < 19) {
+    return '7분';
+  } else if (date.getHours() == 19 || date.getHours() == 20) {
+    return '7분';
   }
 }
