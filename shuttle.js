@@ -67,6 +67,21 @@ function stnight() {
   }
 }
 
+function stnsdstation(){
+  var date = new Date();
+  if (date.getDay() == 0 || date.getDay() == 6) {
+    return '<span style="color:red;">주말에는<br />운행안함<span>';
+  } else if (date.getHours() > 10) {
+    return '<span style="color:red;">운행종료<span>';
+  } else if (date.getHours() < 8 || (date.getHours() == 8 && date.getMinutes() <30 ) ) {
+    return '<span style="color:red;">미운행</span><br /><span style="color:green;font-weight:bold;">8시30분부터</span>';
+  } else {
+    return '<span style="color:blue;font-weight:bold;">운행중<br />11시까지</span>';
+  }
+}
+
+
+
 function ststationinterval() {
   var date = new Date();
   if (date.getDay() == 0 || date.getDay() == 6) {
