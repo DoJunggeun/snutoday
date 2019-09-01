@@ -123,9 +123,9 @@ function stnight2() {
 function ststationinterval() {
   var date = new Date();
   if (date.getDay() == 0 || date.getDay() == 6) {
-    return '<span onclick="window.open("./img/sttt.jpg")>클릭해서<br/>확인하기</span>';
+    return '<span onclick="window.open("./img/sttt.jpg")">클릭해서<br/>확인하기</span>';
   } else if (date.getHours() > 19 || date.getHours() < 7) {
-    return '<span onclick="window.open("./img/sttt.jpg")>클릭해서<br/>확인하기</span>';
+    return '<span onclick="window.open("./img/sttt.jpg")">클릭해서<br/>확인하기</span>';
   } else if (date.getHours() == 7) {
     return '15분';
   } else if (date.getHours() >= 8 && date.getHours() < 11) {
@@ -142,9 +142,9 @@ function ststationinterval() {
 function stdhdinterval() {
   var date = new Date();
   if (date.getDay() == 0 || date.getDay() == 6) {
-    return '<span onclick="window.open("./img/sttt.jpg")>클릭해서<br/>확인하기</span>';
+    return '<span onclick="window.open("./img/sttt.jpg")">클릭해서<br/>확인하기</span>';
   } else if (date.getHours() > 19 || date.getHours() < 7) {
-    return '<span onclick="window.open("./img/sttt.jpg")>클릭해서<br/>확인하기</span>';
+    return '<span onclick="window.open("./img/sttt.jpg")">클릭해서<br/>확인하기</span>';
   } else if (date.getHours() == 7) {
     return '15분';
   } else if (date.getHours() >= 8 && date.getHours() < 10) {
@@ -163,9 +163,9 @@ function stdhdinterval() {
 function stinnerinterval() {
   var date = new Date();
   if (date.getDay() == 0 || date.getDay() == 6) {
-    return '<span onclick="window.open("./img/sttt.jpg")>클릭해서<br/>확인하기</span>';
+    return '<span onclick="window.open("./img/sttt.jpg")">클릭해서<br/>확인하기</span>';
   } else if (date.getHours() > 20 || date.getHours() < 7) {
-    return '<span onclick="window.open("./img/sttt.jpg")>클릭해서<br/>확인하기</span>';
+    return '<span onclick="window.open("./img/sttt.jpg")">클릭해서<br/>확인하기</span>';
   } else if (date.getHours() < 19) {
     return '7분';
   } else if (date.getHours() == 19 || date.getHours() == 20) {
