@@ -31,14 +31,13 @@
     <h3 class="w3-padding-64 w3-center" style="font-family: 'Noto Sans KR', sans-serif; font-weight:800; cursor:pointer;" onclick="location.href='index.html'"><b>서울대 지금<br>이거 하나요?</b></h3>
     <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">메뉴닫기</a>
     <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button" style="font-family: 'Noto Sans KR', sans-serif;">홈</a>
-    <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button" style="font-family: 'Noto Sans KR', sans-serif;">소개</a>
     <a href="shuttle.html" onclick="w3_close()" class="w3-bar-item w3-button" style="font-family: 'Noto Sans KR', sans-serif;">지금 셔틀 하나요?</a>
     <a href="meal.html" onclick="w3_close()" class="w3-bar-item w3-button" style="font-family: 'Noto Sans KR', sans-serif;">지금 식당 하나요?</a>
     <a href="conv.html" onclick="w3_close()" class="w3-bar-item w3-button" style="font-family: 'Noto Sans KR', sans-serif;">지금 매점 하나요?</a>
     <a href="cafe.html" onclick="w3_close()" class="w3-bar-item w3-button" style="font-family: 'Noto Sans KR', sans-serif;">지금 카페 하나요?</a>
     <a href="download.html" onclick="w3_close()" class="w3-bar-item w3-button" style="font-family: 'Noto Sans KR', sans-serif;">다운로드</a>
     <a href="hongbo.html" onclick="w3_close()" class="w3-bar-item w3-button" style="font-family: 'Noto Sans KR', sans-serif;">공유하기</a>
-    <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button" style="font-family: 'Noto Sans KR', sans-serif;">제보하기</a>
+    <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button" style="font-family: 'Noto Sans KR', sans-serif;">제작자에게</a>
   </nav>
   ​
   <!-- Top menu on small screens -->
@@ -85,7 +84,32 @@
           </p>
         </div>
         <hr class="w3-opacity">
+
+          <div class="w3-content" style="max-width:600px">
+            <h4 class="w3-center"><b>제보하기</b></h4>
+            <p>본 페이지에 사실과 다른 정보가 있나요?<br />제보해주시면 확인 후 즉시 반영하겠습니다.</p>
+            <form action="mailto:jg.do@snu.ac.kr" method="GET">
+              <!--action="/action_page.php" target="_blank" method="post" -->
+              <div class="w3-section">
+                <label>이름</label>
+                <input class="w3-input w3-border" type="text" name="Name" required>
+              </div>
+              <div class="w3-section">
+                <label>이메일</label>
+                <input class="w3-input w3-border" type="text" name="Email" required>
+              </div>
+              <div class="w3-section">
+                <label>제보 내용</label>
+                <input class="w3-input w3-border" type="text" name="Message" required>
+              </div>
+              <button type="submit" class="w3-button w3-block w3-black w3-margin-bottom">제보하기</button>
+            </form>
+          </div>
+          <hr class="w3-opacity">
+
       </div>
+
+
     </div>
 
 
