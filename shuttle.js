@@ -86,7 +86,7 @@ function steng() {
     return '<span style="color:red;">주말에는<br />운행안함<span>';
   } else if (date.getHours() > 10) {
     return '<span style="color:red;">운행종료<span>';
-  } else if (date.getHours() < 8)) {
+  } else if (date.getHours() < 8) {
   return '<span style="color:red;">미운행</span><br /><span style="color:green;font-weight:bold;">8시부터</span>';
 } else {
   return '<span style="color:blue;font-weight:bold;">운행중<br />11시까지</span>';
@@ -99,7 +99,7 @@ function stinnerreverse() {
     return '<span style="color:red;">주말에는<br />운행안함<span>';
   } else if (date.getHours() > 17 || (date.getHours() == 17 && date.getMinutes() > 50)) {
     return '<span style="color:red;">운행종료<span>';
-  } else if (date.getHours() < 9 || (date.getHours() == 9 && date.getMinutes() < 50))) {
+  } else if (date.getHours() < 9 || (date.getHours() == 9 && date.getMinutes() < 50)) {
   return '<span style="color:red;">미운행</span><br /><span style="color:green;font-weight:bold;">9시50분부터</span>';
 } else {
   return '<span style="color:blue;font-weight:bold;">운행중<br />17시50분까지</span>';
@@ -110,7 +110,7 @@ function stnight2() {
   var date = new Date();
   if (date.getDay() == 0 || (date.getDay() == 6 && date.getHours() >= 2)) {
     return '<span style="color:red;">주말에는<br />운행안함<span>';
-  } else if (date.getHours() >= 2)) {
+  } else if (date.getHours() >= 2) {
     return '<span style="color:red;">미운행</span><br /><span style="color:green;font-weight:bold;">자정부터</span>';
 } else {
   return '<span style="color:blue;font-weight:bold;">운행중<br />02시까지</span>';
