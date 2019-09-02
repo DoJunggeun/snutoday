@@ -75,7 +75,7 @@ function hgmeal2() {
   } else if ((date.getHours() >= 11 && date.getHours() < 13) || (date.getHours() == 13 && date.getMinutes() < 30)) {
     return '<span style="color:blue;font-weight:bold;">운영중<br/>13시30분까지</span>';
   } else if ((date.getDay() > 0 && date.getDay() < 6) && (date.getHours() >= 14 && date.getHours() < 18)) {
-    return '<span style="color:blue;font-weight:bold;">운영중(분식)<br/>13시30분까지<span>';
+    return '<span style="color:blue;font-weight:bold;">운영중(분식)<br/>18시까지<span>';
   } else if (date.getHours() < 11) {
     return '<span style="color:red;">미운영</span><br /><span style="color:green;font-weight:bold;">11시부터<br/>점심시작</span>';
   } else if (date.getHours() == 13) {
