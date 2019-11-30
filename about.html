@@ -45,7 +45,16 @@
   ​
   <!-- Overlay effect when opening sidebar on small <scr></scr>eens -->
   <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-  ​
+
+  ​    <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
   <!-- !PAGE CONTENT! -->
   <div class="w3-main" style="margin-left:300px">
     ​
@@ -53,61 +62,28 @@
     <div class="w3-hide-large" style="margin-top:83px"></div>
 
     <!-- About section -->
-    <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+    <div class="w3-container w3-light-grey w3-center w3-padding-32" id="about">
       <div class="w3-content w3-justify" style="max-width:600px">
         <div class="w3-content" style="max-width:600px">
-          <h4 class="w3-center"><b>제작자에게 제보하기</b></h4>
-          <p>본 페이지에 사실과 다른 정보 혹은 추가되기를 원하시는 정보가 있나요?<br />제보해주시면 확인 후 즉시 반영하겠습니다.</p>
+          <h4 class="w3-center "><b>제작자에게 제보하기</b></h4>
+          <p>
+            <ul class="w3-padding-32">
+              <li>사실과 다른 정보</li>
+              <li>추가되기를 원하시는 정보</li>
+              <li>기타 개선을 원하시는 사항</li>
+            </ul>
+            들을 제보해주시면 확인 후 신속히 반영하겠습니다.
+          </p><br><br>
             <button type="submit" style="padding:20px; font-size:28px;" class="w3-button w3-block w3-black w3-margin-bottom"  onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSeAOS1F3bnfkikIPH11mf6EhPD0qEypeqeey7_4QkSMBaD8nw/viewform?usp=sf_link')">제보하기</button>
-        </div>
-        <hr class="w3-opacity">
-
-        <h4>제작자 도정근</h4>
-          <p>
-            2015.03. 서울대학교 자연과학대학 물리천문학부 입학
-          </p>
-          <p>
-            2017.04.~2018.03. 서울대학교 자연과학대학 학생회장
-          </p>
-          <p>
-            2018.12.~2019.11.(현재) 서울대학교 총학생회장
-          </p>
-        </div>
-        <hr class="w3-opacity">
+          <br><br></div>
 
 
       </div>
 
-
-
-
-    <!-- Pagination
-        <div class="w3-center w3-padding-32">
-      <div class="w3-bar">
-        <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-        <a href="#" class="w3-bar-item w3-black w3-button">1</a>
-        <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
-        <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
-        <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
-        <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
-      </div>
-    </div>
--->
-    <!-- Modal for full size images on click-->
-    <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
-      <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
-      <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-        <img id="img01" class="w3-image">
-        <p id="caption"></p>
-      </div>
-    </div>
-
-
-
-    <div class="w3-black w3-center w3-padding-24">© 2019 도정근 All Rights Reserved</div>
 
     <!-- End page content -->
   </div>
+  <div class="w3-black w3-center w3-padding-24">© 2019 도정근 All Rights Reserved</div>
 
 </body>
 
